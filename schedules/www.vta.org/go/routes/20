@@ -1,0 +1,961 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-P7HS4CJ');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"12630f4102",applicationID:"581591516"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(7),c=e(8),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(9);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e){return!(!e||!e.protocol||"file:"===e.protocol)}t.exports=r},{}],4:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(6),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],5:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],6:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],7:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],8:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],9:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(7),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=x.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=e(2),c=e("handle"),f=e(7),u=e("ee"),s=e(5),d=e(3),p=window,l=p.document,m="addEventListener",v="attachEvent",g=p.XMLHttpRequest,w=g&&g.prototype;if(d(p.location)){NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:g,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1208.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:b,userAgent:s};e(1),e(4),l[m]?(l[m]("DOMContentLoaded",o,!1),p[m]("load",r,!1)):(l[v]("onreadystatechange",i),p[v]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0}},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(8),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<noscript><style>form.antibot * :not(.antibot-message) { display: none !important; }</style>
+</noscript><script src="/sites/default/files/hotjar/hotjar.script.js?qpq4lc"></script>
+<link rel="canonical" href="https://www.vta.org/go/routes/20" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/themes/custom/de_theme/src/img/favicons/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="revision" href="https://www.vta.org/go/routes/20" />
+<script src="/sites/default/files/google_tag/primary/google_tag.script.js?qpq4lc" defer></script>
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};</script>
+
+    <title>Milpitas BART - Sunnyvale Transit Center | VTA</title>
+    <!-- import font awesome icons -->
+    <!-- <script src="https://use.fontawesome.com/fd7b9d90d0.js"></script> -->
+    <style>
+    /*@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Source+Sans+Pro:400,600,700');*/
+    </style>
+
+    
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_v9NYHhXOKLbzag5URK5tbLCH7SW0_FXSHPiieYrXlEI.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_meFjX13zIfmR4uqs-mZp2EgCMQhV_ccTope5tKwd0QA.css" />
+<link rel="stylesheet" media="all" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_ydX0mgGxtp3sjFBJagU8uWotaR89aWWDXNpO43CJ2zk.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_ipwsqpkG3vPqjlQrme52HNC5fFI_BwyBP2_LBzgM6o4.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_-V4BhDqc0xZXPR4Q_O9WPsuuNPfsXCN7K9ZWjJyMsjs.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/optimized/js_dHny-amWPLMeggFZO0q9qztnliwo_qRE1s-q_BE-jjU.3Jy_GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g.js?v=3.7.3"></script>
+<![endif]-->
+<script src="/themes/custom/de_theme/dist/scripts/js/vendor/modernizr.min.js?v=3.3.1"></script>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/de_theme/src/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/themes/custom/de_theme/src/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/themes/custom/de_theme/src/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/themes/custom/de_theme/src/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/themes/custom/de_theme/src/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="themes/custom/de_theme/src/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/themes/custom/de_theme/src/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+        
+  </head>
+  <body class="no_sidebars role-anonymous path-node node--type-route has-alert-banner has-service-alerts">
+    <a tabindex="1" href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7HS4CJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<header id="header">
+  <div class="layout-header">
+
+    <div id="masthead" class="masthead">
+          <div class="region region--masthead-actions clearfix" id="masthead-actions">
+    <div class="layout-container">
+      <div class="region-inner clearfix">
+        
+<div id="block-alert-banner-block" class="block block-block-content block-block-contente143c448-ef7e-4615-a796-e5cf0e06b98d block-alert-banner warning" role="alert">
+  
+  
+      <span class="alert-banner-icon"></span>
+    <div class="alert-banner-content">
+      
+            <div class="field field--name-field-alert-banner-title field--type-string field--label-hidden field__item">VTA COVID-19 Information Center</div>
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><strong>Feb 8: Rear-door boarding, face masks required, service frequency adjusted -</strong> <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="3f9097fe-0194-4365-8dca-6da881294997" href="/covid-19" title="VTA COVID-19 Information Center">vta.org/covid-19</a></p>
+</div>
+      
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+          <div class="region region--masthead-primary clearfix" id="masthead-primary">
+    <div class="region-inner clearfix">
+      <button tabindex="5" aria-expanded="false" class="menu-toggle fa fa-bars">Menu</button>
+      <div id="block-de-theme-branding" class="block block-system block-system-branding-block">
+  
+    
+        <a tabindex="3" href="/" title="Santa Clara Valley Transportation Authority Home" rel="home" class="site-logo">
+      <img src="/themes/custom/de_theme/logo.svg" alt="Santa Clara Valley Transportation Authority Home" />
+    </a>
+      </div>
+<nav role="navigation" aria-labelledby="block-de-theme-main-menu-menu" id="block-de-theme-main-menu" class="block block-menu navigation menu--main">
+            
+  <h2 aria-hidden="true"  class="visually-hidden" id="block-de-theme-main-menu-menu">Main navigation</h2>
+  
+
+        
+              <ul class="menu">
+              
+              <li class="menu-item menu-item--expanded" aria-expanded="false">
+              <a href="/go" data-drupal-link-system-path="node/566">Go</a>
+                                <ul class="menu">
+              
+            <li class="menu-item">
+              <a href="/#real-time" class="map-modal" data-drupal-link-system-path="&lt;front&gt;">Real Time</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/go/routes" data-drupal-link-system-path="node/11">Routes</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/go/service-alerts" data-drupal-link-system-path="node/616">Service Alerts</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/go/maps" data-drupal-link-system-path="node/591">Maps</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/trip-planner" class="map-modal" data-drupal-link-system-path="node/1438536">Trip Planner</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/go/fares" data-drupal-link-system-path="node/481">Fares &amp; Payment</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/go/stations" data-drupal-link-system-path="node/14041">Stations &amp; Parking</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/go/accessibility" data-drupal-link-system-path="node/1791">Accessibility</a>
+              </li>
+        </ul>
+  
+              </li>
+          
+              <li class="menu-item menu-item--expanded" aria-expanded="false">
+              <a href="/projects" data-drupal-link-system-path="node/6">Projects</a>
+                                <ul class="menu">
+              
+            <li class="menu-item">
+              <a href="/projects" data-drupal-link-system-path="node/6">Project Finder</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/programs/congestion-management-agency" data-drupal-link-system-path="node/1116">Congestion Management Agency</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/projects/bart-sv" data-drupal-link-system-path="node/2251">BART Silicon Valley</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/projects/2021-transit-service-plan" data-drupal-link-system-path="node/1322881">2021 Service Plan</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/programs/congestion-management-program/grants" data-drupal-link-system-path="node/1541">Funding</a>
+              </li>
+        </ul>
+  
+              </li>
+          
+              <li class="menu-item menu-item--expanded" aria-expanded="false">
+              <a href="/beta-launch" data-drupal-link-system-path="node/571">About</a>
+                                <ul class="menu">
+              
+            <li class="menu-item">
+              <a href="/blog" data-drupal-link-system-path="node/846">News</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/about/board-and-committees" data-drupal-link-system-path="node/731">Board &amp; Committees</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/about/careers" data-drupal-link-system-path="node/781">Careers</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/business-center" data-drupal-link-system-path="node/716">Business Center</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/about" data-drupal-link-system-path="node/1271">About VTA</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/about/title-vi" data-drupal-link-system-path="node/13401">Title VI</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/about/newsroom" data-drupal-link-system-path="node/1276">Newsroom</a>
+              </li>
+          
+            <li class="menu-item">
+              <a href="/about/contact" data-drupal-link-system-path="node/2161">Contact</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div  class="views-element-container block block-views block-views-blockservice-alerts-block-header" id="block-views-block-service-alerts-block-header">
+  
+      <button tabindex="2" aria-label="open service alerts" aria-expanded="false" >Service Alerts</button>
+    
+      <div><div class="view view-service-alerts view-id-service_alerts view-display-id-block_header js-view-dom-id-b9e7db40c47358e015a0be807144ff42aa0c1c6b6e780c00aee3fb09735624e2">
+  
+    
+      <div class="alert-wrapper">
+          <div class="attachment attachment-before">
+        <div class="views-element-container"><div class="view view-service-alerts view-id-service_alerts view-display-id-attachment_all_routes js-view-dom-id-b7021786718dcb301baf54f9891260136b44b3b34ade8f7aad5e8c8fb05f1019">
+  
+    
+      <div class="view-header">
+      <h2 class="all-routes">All Routes</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="service-alerts-grouping-wrapper">
+            <div class="views-row">
+<div class="service-alert-fields-wrapper alert">
+        <div class="views-field views-field-field-alert-effect"><div class="field-content"><div  about="/taxonomy/term/36" class="taxonomy-term vocabulary-alert-effect">
+  <div class="alert-effect" style="background-color: #ffbf0d;"></div>
+</div>
+</div></div>      <div class="views-field views-field-title"><h4 class="field-content"><a href="/go/service-alerts/february-8-vta-requires-rear-door-boarding-face-masks-and-adjust-service" hreflang="en">February 8: VTA requires rear-door boarding, face masks and adjust service frequency</a></h4></div>      <div class="views-field views-field-field-start-date"><span class="views-label views-label-field-start-date">Start Date: </span><div class="field-content"><time datetime="2021-02-08T05:00:00Z" class="datetime" aria-label="02/08/2021 - 5:00 AM">02/08/2021 - 5:00 AM</time>
+</div></div>      <div class="views-field views-field-field-end-date"><div class="field-content"></div></div>      <div class="views-field views-field-view-node"><span class="field-content more-link"><a href="/go/service-alerts/february-8-vta-requires-rear-door-boarding-face-masks-and-adjust-service" hreflang="en">Read more</a></span></div></div>
+</div>
+  </div>
+
+    </div>
+  
+          </div>
+</div>
+
+      </div>
+    
+          <div class="view-content">
+        <div class="service-alerts-grouping-wrapper">
+            <div class="views-row">
+<div class="service-alert-fields-wrapper alert">
+        <div class="views-field views-field-field-alert-effect"><div class="field-content"><div  about="/taxonomy/term/46" class="taxonomy-term vocabulary-alert-effect">
+  <div class="alert-effect" style="background-color: #4cb4e7;"></div>
+</div>
+</div></div>      <div class="views-field views-field-field-related-routes"><div class="field-content">
+
+<a class="related-route-reference-link" href="/go/routes/green-line" aria-label="Route Green Line - ">
+  <article role="article" about="/go/routes/green-line" class="node node--type-route node--view-mode-related-reference" style="background-color: #73C92D; color: #000000;">
+    <div class="node__content">
+      
+            <div class="field field--name-field-route-category field--type-entity-reference field--label-hidden field__item"><div  about="/taxonomy/term/6" class="taxonomy-term vocabulary-route-category light-rail">light-rail</div>
+</div>
+      
+            <div class="field field--name-field-route-short-name field--type-string field--label-hidden field__item">Green Line</div>
+      
+    </div>
+  </article>
+</a>
+</div></div>      <div class="views-field views-field-title"><h4 class="field-content"><a href="/go/service-alerts/green/green-line-serves-covid-vaccination-site" hreflang="en">Green Line: Serves a COVID vaccination site</a></h4></div>      <div class="views-field views-field-field-start-date"><span class="views-label views-label-field-start-date">Start Date: </span><div class="field-content"><time datetime="2021-02-24T18:00:00Z" class="datetime" aria-label="02/24/2021 - 10:00 AM">02/24/2021 - 10:00 AM</time>
+</div></div>      <div class="views-field views-field-view-node"><span class="field-content more-link"><a href="/go/service-alerts/green/green-line-serves-covid-vaccination-site" hreflang="en">Read more</a></span></div></div>
+</div>
+          <div class="views-row">
+<div class="service-alert-fields-wrapper alert">
+        <div class="views-field views-field-field-alert-effect"><div class="field-content"><div  about="/taxonomy/term/46" class="taxonomy-term vocabulary-alert-effect">
+  <div class="alert-effect" style="background-color: #4cb4e7;"></div>
+</div>
+</div></div>      <div class="views-field views-field-field-related-routes"><div class="field-content">
+
+<a class="related-route-reference-link" href="/go/routes/orange-line" aria-label="Route Orange Line - ">
+  <article role="article" about="/go/routes/orange-line" class="node node--type-route node--view-mode-related-reference" style="background-color: #FF8300; color: #000000;">
+    <div class="node__content">
+      
+            <div class="field field--name-field-route-category field--type-entity-reference field--label-hidden field__item"><div  about="/taxonomy/term/6" class="taxonomy-term vocabulary-route-category light-rail">light-rail</div>
+</div>
+      
+            <div class="field field--name-field-route-short-name field--type-string field--label-hidden field__item">Orange Line</div>
+      
+    </div>
+  </article>
+</a>
+</div></div>      <div class="views-field views-field-title"><h4 class="field-content"><a href="/go/service-alerts/ornge/orange-line-serves-covid-vaccination-site" hreflang="en">Orange Line: Serves a COVID vaccination site</a></h4></div>      <div class="views-field views-field-field-start-date"><span class="views-label views-label-field-start-date">Start Date: </span><div class="field-content"><time datetime="2021-02-24T18:00:00Z" class="datetime" aria-label="02/24/2021 - 10:00 AM">02/24/2021 - 10:00 AM</time>
+</div></div>      <div class="views-field views-field-view-node"><span class="field-content more-link"><a href="/go/service-alerts/ornge/orange-line-serves-covid-vaccination-site" hreflang="en">Read more</a></span></div></div>
+</div>
+          <div class="views-row">
+<div class="service-alert-fields-wrapper alert">
+        <div class="views-field views-field-field-alert-effect"><div class="field-content"><div  about="/taxonomy/term/26" class="taxonomy-term vocabulary-alert-effect">
+  <div class="alert-effect" style="background-color: #ffbf0d;"></div>
+</div>
+</div></div>      <div class="views-field views-field-field-related-routes"><div class="field-content">
+
+<a class="related-route-reference-link" href="/go/routes/rapid-522" aria-label="Route Rapid 522 - ">
+  <article role="article" about="/go/routes/rapid-522" class="node node--type-route node--view-mode-related-reference" style="background-color: #E4002B; color: #FFFFFF;">
+    <div class="node__content">
+      
+            <div class="field field--name-field-route-category field--type-entity-reference field--label-hidden field__item"><div  about="/taxonomy/term/416" class="taxonomy-term vocabulary-route-category frequent">frequent</div>
+</div>
+      
+            <div class="field field--name-field-route-short-name field--type-string field--label-hidden field__item">Rapid 522</div>
+      
+    </div>
+  </article>
+</a>
+</div></div>      <div class="views-field views-field-title"><h4 class="field-content"><a href="/go/service-alerts/522/route-522-temporary-bus-stop-relocation-el-camino-and-castro" hreflang="en">Route 522: Temporary Bus Stop Relocation at El Camino and Castro</a></h4></div>      <div class="views-field views-field-field-start-date"><span class="views-label views-label-field-start-date">Start Date: </span><div class="field-content"><time datetime="2021-03-02T05:00:00Z" class="datetime" aria-label="03/02/2021 - 5:00 AM">03/02/2021 - 5:00 AM</time>
+</div></div>      <div class="views-field views-field-field-end-date"><span class="views-label views-label-field-end-date">End Date: </span><div class="field-content"><time datetime="2021-04-12T23:59:00Z" class="datetime" aria-label="04/12/2021 - 11:59 PM">04/12/2021 - 11:59 PM</time>
+</div></div>      <div class="views-field views-field-view-node"><span class="field-content more-link"><a href="/go/service-alerts/522/route-522-temporary-bus-stop-relocation-el-camino-and-castro" hreflang="en">Read more</a></span></div></div>
+</div>
+          <div class="views-row">
+<div class="service-alert-fields-wrapper alert">
+        <div class="views-field views-field-field-alert-effect"><div class="field-content"><div  about="/taxonomy/term/46" class="taxonomy-term vocabulary-alert-effect">
+  <div class="alert-effect" style="background-color: #4cb4e7;"></div>
+</div>
+</div></div>      <div class="views-field views-field-field-related-routes"><div class="field-content">
+
+<a class="related-route-reference-link" href="/go/routes/rapid-522" aria-label="Route Rapid 522 - ">
+  <article role="article" about="/go/routes/rapid-522" class="node node--type-route node--view-mode-related-reference" style="background-color: #E4002B; color: #FFFFFF;">
+    <div class="node__content">
+      
+            <div class="field field--name-field-route-category field--type-entity-reference field--label-hidden field__item"><div  about="/taxonomy/term/416" class="taxonomy-term vocabulary-route-category frequent">frequent</div>
+</div>
+      
+            <div class="field field--name-field-route-short-name field--type-string field--label-hidden field__item">Rapid 522</div>
+      
+    </div>
+  </article>
+</a>
+</div></div>      <div class="views-field views-field-title"><h4 class="field-content"><a href="/go/service-alerts/522/route-522-serves-multiple-covid-vaccination-sites" hreflang="en">Route 522: Serves multiple COVID vaccination sites</a></h4></div>      <div class="views-field views-field-field-start-date"><span class="views-label views-label-field-start-date">Start Date: </span><div class="field-content"><time datetime="2021-02-24T18:00:00Z" class="datetime" aria-label="02/24/2021 - 10:00 AM">02/24/2021 - 10:00 AM</time>
+</div></div>      <div class="views-field views-field-view-node"><span class="field-content more-link"><a href="/go/service-alerts/522/route-522-serves-multiple-covid-vaccination-sites" hreflang="en">Read more</a></span></div></div>
+</div>
+          <div class="views-row">
+<div class="service-alert-fields-wrapper alert">
+        <div class="views-field views-field-field-alert-effect"><div class="field-content"><div  about="/taxonomy/term/21" class="taxonomy-term vocabulary-alert-effect">
+  <div class="alert-effect" style="background-color: #ffbf0d;"></div>
+</div>
+</div></div>      <div class="views-field views-field-field-related-routes"><div class="field-content">
+
+<a class="related-route-reference-link" href="/go/routes/21" aria-label="Route 21 - ">
+  <article role="article" about="/go/routes/21" class="node node--type-route node--view-mode-related-reference" style="background-color: #29588C; color: #FFFFFF;">
+    <div class="node__content">
+      
+            <div class="field field--name-field-route-category field--type-entity-reference field--label-hidden field__item"><div  about="/taxonomy/term/411" class="taxonomy-term vocabulary-route-category local">local</div>
+</div>
+      
+            <div class="field field--name-field-route-short-name field--type-string field--label-hidden field__item">21</div>
+      
+    </div>
+  </article>
+</a>
+</div></div>      <div class="views-field views-field-title"><h4 class="field-content"><a href="/go/service-alerts/21/reroute-route-21-palo-alto-125-430" hreflang="en">Reroute of Route 21 in Palo Alto 1/25 - 4/30</a></h4></div>      <div class="views-field views-field-field-start-date"><span class="views-label views-label-field-start-date">Start Date: </span><div class="field-content"><time datetime="2021-03-01T17:00:00Z" class="datetime" aria-label="03/01/2021 - 9:00 AM">03/01/2021 - 9:00 AM</time>
+</div></div>      <div class="views-field views-field-field-end-date"><span class="views-label views-label-field-end-date">End Date: </span><div class="field-content"><time datetime="2021-05-01T01:00:00Z" class="datetime" aria-label="04/30/2021 - 6:00 PM">04/30/2021 - 6:00 PM</time>
+</div></div>      <div class="views-field views-field-view-node"><span class="field-content more-link"><a href="/go/service-alerts/21/reroute-route-21-palo-alto-125-430" hreflang="en">Read more</a></span></div></div>
+</div>
+          <div class="views-row">
+<div class="service-alert-fields-wrapper alert">
+        <div class="views-field views-field-field-alert-effect"><div class="field-content"><div  about="/taxonomy/term/46" class="taxonomy-term vocabulary-alert-effect">
+  <div class="alert-effect" style="background-color: #4cb4e7;"></div>
+</div>
+</div></div>      <div class="views-field views-field-field-related-routes"><div class="field-content">
+
+<a class="related-route-reference-link" href="/go/routes/21" aria-label="Route 21 - ">
+  <article role="article" about="/go/routes/21" class="node node--type-route node--view-mode-related-reference" style="background-color: #29588C; color: #FFFFFF;">
+    <div class="node__content">
+      
+            <div class="field field--name-field-route-category field--type-entity-reference field--label-hidden field__item"><div  about="/taxonomy/term/411" class="taxonomy-term vocabulary-route-category local">local</div>
+</div>
+      
+            <div class="field field--name-field-route-short-name field--type-string field--label-hidden field__item">21</div>
+      
+    </div>
+  </article>
+</a>
+</div></div>      <div class="views-field views-field-title"><h4 class="field-content"><a href="/go/service-alerts/21/route-21-serves-covid-vaccination-site" hreflang="en">Route 21: Serves a COVID vaccination site</a></h4></div>      <div class="views-field views-field-field-start-date"><span class="views-label views-label-field-start-date">Start Date: </span><div class="field-content"><time datetime="2021-02-24T18:00:00Z" class="datetime" aria-label="02/24/2021 - 10:00 AM">02/24/2021 - 10:00 AM</time>
+</div></div>      <div class="views-field views-field-view-node"><span class="field-content more-link"><a href="/go/service-alerts/21/route-21-serves-covid-vaccination-site" hreflang="en">Read more</a></span></div></div>
+</div>
+          <div class="views-row">
+<div class="service-alert-fields-wrapper alert">
+        <div class="views-field views-field-field-alert-effect"><div class="field-content"><div  about="/taxonomy/term/21" class="taxonomy-term vocabulary-alert-effect">
+  <div class="alert-effect" style="background-color: #ffbf0d;"></div>
+</div>
+</div></div>      <div class="views-field views-field-field-related-routes"><div class="field-content">
+
+<a class="related-route-reference-link" href="/go/routes/21" aria-label="Route 21 - ">
+  <article role="article" about="/go/routes/21" class="node node--type-route node--view-mode-related-reference" style="background-color: #29588C; color: #FFFFFF;">
+    <div class="node__content">
+      
+            <div class="field field--name-field-route-category field--type-entity-reference field--label-hidden field__item"><div  about="/taxonomy/term/411" class="taxonomy-term vocabulary-route-category local">local</div>
+</div>
+      
+            <div class="field field--name-field-route-short-name field--type-string field--label-hidden field__item">21</div>
+      
+    </div>
+  </article>
+</a>
+</div></div>      <div class="views-field views-field-title"><h4 class="field-content"><a href="/go/service-alerts/21/reroute-line-21-mtn-view-until-further-notice" hreflang="en">Reroute of Line 21 in Mtn. View until further notice</a></h4></div>      <div class="views-field views-field-field-start-date"><span class="views-label views-label-field-start-date">Start Date: </span><div class="field-content"><time datetime="2021-02-08T13:00:00Z" class="datetime" aria-label="02/08/2021 - 5:00 AM">02/08/2021 - 5:00 AM</time>
+</div></div>      <div class="views-field views-field-view-node"><span class="field-content more-link"><a href="/go/service-alerts/21/reroute-line-21-mtn-view-until-further-notice" hreflang="en">Read more</a></span></div></div>
+</div>
+          <div class="views-row">
+<div class="service-alert-fields-wrapper alert">
+        <div class="views-field views-field-field-alert-effect"><div class="field-content"><div  about="/taxonomy/term/26" class="taxonomy-term vocabulary-alert-effect">
+  <div class="alert-effect" style="background-color: #ffbf0d;"></div>
+</div>
+</div></div>      <div class="views-field views-field-field-related-routes"><div class="field-content">
+
+<a class="related-route-reference-link" href="/go/routes/22" aria-label="Route 22 - ">
+  <article role="article" about="/go/routes/22" class="node node--type-route node--view-mode-related-reference" style="background-color: #E4002B; color: #FFFFFF;">
+    <div class="node__content">
+      
+            <div class="field field--name-field-route-category field--type-entity-reference field--label-hidden field__item"><div  about="/taxonomy/term/416" class="taxonomy-term vocabulary-route-category frequent">frequent</div>
+</div>
+      
+            <div class="field field--name-field-route-short-name field--type-string field--label-hidden field__item">22</div>
+      
+    </div>
+  </article>
+</a>
+</div></div>      <div class="views-field views-field-title"><h4 class="field-content"><a href="/go/service-alerts/22/route-22-temporary-bus-stop-relocation-el-camino-and-castro" hreflang="en">Route 22: Temporary Bus Stop Relocation at El Camino and Castro</a></h4></div>      <div class="views-field views-field-field-start-date"><span class="views-label views-label-field-start-date">Start Date: </span><div class="field-content"><time datetime="2021-03-01T23:14:00Z" class="datetime" aria-label="03/01/2021 - 3:14 PM">03/01/2021 - 3:14 PM</time>
+</div></div>      <div class="views-field views-field-field-end-date"><span class="views-label views-label-field-end-date">End Date: </span><div class="field-content"><time datetime="2021-04-13T06:59:00Z" class="datetime" aria-label="04/12/2021 - 11:59 PM">04/12/2021 - 11:59 PM</time>
+</div></div>      <div class="views-field views-field-view-node"><span class="field-content more-link"><a href="/go/service-alerts/22/route-22-temporary-bus-stop-relocation-el-camino-and-castro" hreflang="en">Read more</a></span></div></div>
+</div>
+          <div class="views-row">
+<div class="service-alert-fields-wrapper alert">
+        <div class="views-field views-field-field-alert-effect"><div class="field-content"><div  about="/taxonomy/term/46" class="taxonomy-term vocabulary-alert-effect">
+  <div class="alert-effect" style="background-color: #4cb4e7;"></div>
+</div>
+</div></div>      <div class="views-field views-field-field-related-routes"><div class="field-content">
+
+<a class="related-route-reference-link" href="/go/routes/22" aria-label="Route 22 - ">
+  <article role="article" about="/go/routes/22" class="node node--type-route node--view-mode-related-reference" style="background-color: #E4002B; color: #FFFFFF;">
+    <div class="node__content">
+      
+            <div class="field field--name-field-route-category field--type-entity-reference field--label-hidden field__item"><div  about="/taxonomy/term/416" class="taxonomy-term vocabulary-route-category frequent">frequent</div>
+</div>
+      
+            <div class="field field--name-field-route-short-name field--type-string field--label-hidden field__item">22</div>
+      
+    </div>
+  </article>
+</a>
+</div></div>      <div class="views-field views-field-title"><h4 class="field-content"><a href="/go/service-alerts/22/route-22-serves-multiple-covid-vaccination-sites" hreflang="en">Route 22: Serves multiple COVID vaccination sites</a></h4></div>      <div class="views-field views-field-field-start-date"><span class="views-label views-label-field-start-date">Start Date: </span><div class="field-content"><time datetime="2021-02-24T18:00:00Z" class="datetime" aria-label="02/24/2021 - 10:00 AM">02/24/2021 - 10:00 AM</time>
+</div></div>      <div class="views-field views-field-view-node"><span class="field-content more-link"><a href="/go/service-alerts/22/route-22-serves-multiple-covid-vaccination-sites" hreflang="en">Read more</a></span></div></div>
+</div>
+          <div class="views-row">
+<div class="service-alert-fields-wrapper alert">
+        <div class="views-field views-field-field-alert-effect"><div class="field-content"><div  about="/taxonomy/term/46" class="taxonomy-term vocabulary-alert-effect">
+  <div class="alert-effect" style="background-color: #4cb4e7;"></div>
+</div>
+</div></div>      <div class="views-field views-field-field-related-routes"><div class="field-content">
+
+<a class="related-route-reference-link" href="/go/routes/23" aria-label="Route 23 - ">
+  <article role="article" about="/go/routes/23" class="node node--type-route node--view-mode-related-reference" style="background-color: #E4002B; color: #FFFFFF;">
+    <div class="node__content">
+      
+            <div class="field field--name-field-route-category field--type-entity-reference field--label-hidden field__item"><div  about="/taxonomy/term/416" class="taxonomy-term vocabulary-route-category frequent">frequent</div>
+</div>
+      
+            <div class="field field--name-field-route-short-name field--type-string field--label-hidden field__item">23</div>
+      
+    </div>
+  </article>
+</a>
+</div></div>      <div class="views-field views-field-title"><h4 class="field-content"><a href="/go/service-alerts/23/route-23-serves-covid-vaccination-site" hreflang="en">Route 23: Serves a COVID vaccination site</a></h4></div>      <div class="views-field views-field-field-start-date"><span class="views-label views-label-field-start-date">Start Date: </span><div class="field-content"><time datetime="2021-02-24T10:00:00Z" class="datetime" aria-label="02/24/2021 - 10:00 AM">02/24/2021 - 10:00 AM</time>
+</div></div>      <div class="views-field views-field-view-node"><span class="field-content more-link"><a href="/go/service-alerts/23/route-23-serves-covid-vaccination-site" hreflang="en">Read more</a></span></div></div>
+</div>
+  </div>
+
+      </div>
+    
+          </div>
+      <div class="more-link"><a href="/go/service-alerts">View All Service Alerts</a></div>
+
+      </div>
+</div>
+
+  </div>
+
+      <button class="search-toggle fa fa-search" aria-expanded="false" tabindex="4">Search</button>
+    </div>
+  </div>
+
+          <div class="region region--masthead-secondary clearfix" id="masthead-secondary">
+    <div class="region-inner clearfix">
+      <div class="views-exposed-form block block-views block-views-exposed-filter-blockacquia-search-page-global" data-drupal-selector="views-exposed-form-acquia-search-page-global" id="block-exposed-form-acquia-search-page-global-header">
+  
+    
+      <form action="/search" method="get" id="views-exposed-form-acquia-search-page-global" accept-charset="UTF-8">
+  <div class="form--inline clearfix">
+  <div class="js-form-item form-item js-form-type-search-api-autocomplete form-type-search-api-autocomplete js-form-item-search form-item-search">
+      <label for="edit-search">Search</label>
+        <input placeholder="Enter Search Terms..." data-drupal-selector="edit-search" data-search-api-autocomplete-search="acquia_search" class="form-autocomplete form-text" data-autocomplete-path="/search_api_autocomplete/acquia_search?display=page_global&amp;&amp;filter=search" type="text" id="edit-search" name="search" value="" size="30" maxlength="128" />
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit-acquia-search" type="submit" id="edit-submit-acquia-search" value="Search" class="button js-form-submit form-submit" />
+</div>
+
+</div>
+
+</form>
+
+    <button class="search-close">Close Search</button>
+  
+</div>
+
+    </div>
+  </div>
+
+    </div>
+    
+  </div>
+</header>
+
+
+
+<div class="section-content">
+      <div class="region region--content-prefix clearfix" id="page-content-prefix">
+          <div data-drupal-messages-fallback class="hidden"></div>
+<div id="block-de-theme-breadcrumbs" class="block block-system block-system-breadcrumb-block">
+  
+    
+        <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">Breadcrumb</h2>
+    <ol>
+          <li>
+                  <a href="/">Home</a>
+              </li>
+          <li>
+                  <a href="/go">Go</a>
+              </li>
+          <li>
+                  <a href="/go/routes">Routes</a>
+              </li>
+          <li>
+                  Milpitas BART Sunnyvale Transit Center
+              </li>
+        </ol>
+  </nav>
+
+  </div>
+<div id="block-route-navigation-block" class="block block-vta-route-schedule block-route-navigation-block">
+  
+    
+      <form class="vta-route-navigation-form" data-drupal-selector="vta-route-navigation-form" action="/go/routes/20" method="post" id="vta-route-navigation-form" accept-charset="UTF-8">
+  <div data-drupal-selector="edit-route-navigation" id="edit-route-navigation" class="js-form-wrapper form-wrapper"><div class="route-navigation-route-wrapper"><div class="js-form-item form-item js-form-type-select form-type-select js-form-item-route form-item-route">
+      <label for="edit-route">Switch Route:</label>
+        <select data-drupal-selector="edit-route" id="edit-route" name="route" class="form-select"><option value="" selected="selected">- Select a Route -</option><option value="411">Blue Line - Baypointe - Santa Teresa</option><option value="416">Green Line - Old Ironsides - Winchester</option><option value="18801">Orange Line - Mountain View - Alum Rock</option><option value="18806">Rapid 500 - San Jose Diridon Station - Berryessa BART</option><option value="251">Rapid 522 - Palo Alto Transit Center - Eastridge</option><option value="18811">Rapid 523 - Berryessa BART -  Lockheed Martin via De Anza College</option><option value="18816">20 - Milpitas BART - Sunnyvale Transit Center</option><option value="18821">21 - Stanford Shopping Center - Santa Clara Transit Center</option><option value="131">22 - Palo Alto Transit Center - Eastridge</option><option value="136">23 - De Anza College - Alum Rock Station via Stevens Creek</option><option value="141">25 - De Anza College - Alum Rock Station via Valley Med</option><option value="146">26 - West Valley College - Eastridge</option><option value="151">27 - Winchester Station - Kaiser San Jose via Downtown Los Gatos</option><option value="161">31 - Evergreen Valley College - Eastridge</option><option value="201">37 - West Valley College - Capitol Station</option><option value="206">39 - Eastridge - The Villages</option><option value="211">40 - Foothill College - Mountain View Transit Center via North Bayshore</option><option value="216">42 - Evergreen Valley College - Santa Teresa Station</option><option value="18826">44 - Milpitas BART - McCarthy Ranch via Tasman &amp; Alder</option><option value="231">47 - Milpitas BART - McCarthy Ranch via Park Victoria</option><option value="18831">51 - Moffett Field/Ames Center - West Valley College</option><option value="492331">51H - Moffett Field/Ames Center - De Anza College</option><option value="246">52 - Foothill College - Mountain View Transit Center via El Monte</option><option value="256">53 - Sunnyvale Transit Center - Santa Clara Transit Center</option><option value="266">55 - Old Ironsides Station - De Anza College</option><option value="18836">56 - Lockheed Martin - Tamien Station</option><option value="271">57 - Old Ironsides Station - West Valley College</option><option value="18841">59 - Valley Fair - Baypointe Station via Alviso</option><option value="281">60 - Milpitas BART - Winchester Station via SJC Airport</option><option value="286">61 - Sierra &amp; Piedmont - Good Samaritan Hospital</option><option value="18846">64A - McKee &amp; White - Ohlone-Chynoweth Station</option><option value="18851">64B - McKee &amp; White - Almaden Expressway &amp; Camden</option><option value="311">66 - North Milpitas - Kaiser San Jose</option><option value="316">68 - San Jose Diridon Station - Gilroy Transit Center</option><option value="321">70 - Milpitas BART - Eastridge via Jackson</option><option value="326">71 - Milpitas BART - Capitol Station</option><option value="331">72 - Downtown San Jose - Senter &amp; Monterey via McLaughlin</option><option value="336">73 - Downtown San Jose - Senter &amp; Monterey via Senter</option><option value="341">77 - Milpitas BART - Eastridge via King</option><option value="18856">83 - Almaden &amp; McKean - Ohlone-Chynoweth Station</option><option value="18861">84 - Gilroy Transit Center - Saint Louise Hospital via Gilroy Outlets</option><option value="18866">85 - Gilroy Transit Center - Saint Louise Hospital via west Gilroy</option><option value="18871">86 - Gavilan College - Gilroy Transit Center</option><option value="18876">87 - Morgan Hill Civic Center - Burnett Avenue</option><option value="401">89 - California Avenue Caltrain - Palo Alto VA Hospital</option><option value="21">Express 101 - Camden &amp; Highway 85 - Stanford Research Park</option><option value="26">Express 102 - South San Jose - Stanford Research Park</option><option value="31">Express 103 - Eastridge - Stanford Research Park</option><option value="36">Express 104 - Milpitas BART - Stanford Research Park</option><option value="81">Express 168 - Gilroy/Morgan Hill - San Jose Diridon</option><option value="356">ACE Gray - Great America ACE Station -  South Sunnyvale</option><option value="361">ACE Green - Great America ACE Station -  North Santa Clara</option><option value="366">ACE Orange - Great America ACE Station -  Mountain View</option><option value="371">ACE Purple - Great America ACE Station -  West Milpitas</option><option value="376">ACE Red - Great America ACE Station -  North Sunnyvale</option><option value="381">ACE Yellow - Great America ACE Station -  South Santa Clara</option><option value="386">ACE Brown - Great America ACE Station -  South Sunnyvale</option><option value="391">ACE Violet - Great America ACE Station -  VTA Light Rail</option></select>
+        </div>
+</div></div>
+<input class="btn-primary visually-hidden button button--primary js-form-submit form-submit" data-drupal-selector="edit-submit-route-navigation" type="submit" id="edit-submit-route-navigation" name="op" value="Go" />
+<input autocomplete="off" data-drupal-selector="form-mhzfmgtniayw4kyp6to9g6y1aegjnrtng0my8hs4mkc" type="hidden" name="form_build_id" value="form-mHzfMGTniaYW4kyP6To9G6y1aeGjnRtNg0mY8HS4mKc" />
+<input data-drupal-selector="edit-vta-route-navigation-form" type="hidden" name="form_id" value="vta_route_navigation_form" />
+
+</form>
+
+  </div>
+
+      </div>
+
+
+  <div class="layout-container">
+
+    
+    <main role="main" id="main" class="column">
+      <a id="main-content" tabindex="-1"></a>
+      <div class="layout-content">
+              <div class="region region--content clearfix" id="content">
+    <div id="block-de-theme-content" class="block block-system block-system-main-block">
+  
+    
+      
+<article role="article" about="/go/routes/20" class="node node--type-route node--view-mode-full">
+
+  
+    
+
+  
+  <div class="node__content">
+      <div class="layout layout--twocol">
+    
+          <div  class="layout__region layout__region--first">
+        <div class="block block-ctools block-entity-viewnode">
+  
+    
+      
+
+<a class="related-route-reference-link" href="/go/routes/20" aria-label="Route 20 - ">
+  <article role="article" about="/go/routes/20" class="node node--type-route node--view-mode-related-reference" style="background-color: #29588C; color: #FFFFFF;">
+    <div class="node__content">
+      
+            <div class="field field--name-field-route-category field--type-entity-reference field--label-hidden field__item"><div  about="/taxonomy/term/411" class="taxonomy-term vocabulary-route-category local">local</div>
+</div>
+      
+            <div class="field field--name-field-route-short-name field--type-string field--label-hidden field__item">20</div>
+      
+    </div>
+  </article>
+</a>
+
+  </div>
+<div class="block block-layout-builder block-field-blocknoderoutefield-route-status">
+  
+    
+      
+            <div class="field field--name-field-route-status field--type-list-string field--label-hidden field__item"><span class="route-status active" aria-label="This route is active">Active</span></div>
+      
+  </div>
+<div class="block block-layout-builder block-field-blocknoderoutetitle">
+  
+    
+      <h1><span class="field field--name-title field--type-string field--label-hidden">Milpitas BART - Sunnyvale Transit Center</span>
+</h1>
+  </div>
+
+  <div class="block block-layout-builder block-field-blocknoderoutefield-map">
+    
+    
+          <a class="btn btn-primary btn-lightbox" href="#"  data-lightbox-media-url="/sites/default/files/images/2019-12/20_combined.jpg" data-lightbox-media-alt="Schematic map of Route 20 effective December 28, 2019" data-lightbox-media-title="" data-lightbox-media-caption="">View Map</a>
+      </div>
+
+      </div>
+    
+          <div  class="layout__region layout__region--second">
+        <div class="block block-views block-views-blockservice-alerts-block-route">
+  
+      <h2>Service Alerts</h2>
+    
+      <div class="views-element-container"><div class="view view-service-alerts view-id-service_alerts view-display-id-block_route js-view-dom-id-08db6be60a5c35a07e47d51a0443c891e68c47ebe14d1e86087ec85b2ac8e714">
+  
+    
+      <div class="alert-wrapper">
+          <div class="attachment attachment-before">
+        <div class="views-element-container"><div class="view view-service-alerts view-id-service_alerts view-display-id-attachment_all_routes js-view-dom-id-b7021786718dcb301baf54f9891260136b44b3b34ade8f7aad5e8c8fb05f1019">
+  
+    
+      <div class="view-header">
+      <h2 class="all-routes">All Routes</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="service-alerts-grouping-wrapper">
+            <div class="views-row">
+<div class="service-alert-fields-wrapper alert">
+        <div class="views-field views-field-field-alert-effect"><div class="field-content"><div  about="/taxonomy/term/36" class="taxonomy-term vocabulary-alert-effect">
+  <div class="alert-effect" style="background-color: #ffbf0d;"></div>
+</div>
+</div></div>      <div class="views-field views-field-title"><h4 class="field-content"><a href="/go/service-alerts/february-8-vta-requires-rear-door-boarding-face-masks-and-adjust-service" hreflang="en">February 8: VTA requires rear-door boarding, face masks and adjust service frequency</a></h4></div>      <div class="views-field views-field-field-start-date"><span class="views-label views-label-field-start-date">Start Date: </span><div class="field-content"><time datetime="2021-02-08T05:00:00Z" class="datetime" aria-label="02/08/2021 - 5:00 AM">02/08/2021 - 5:00 AM</time>
+</div></div>      <div class="views-field views-field-field-end-date"><div class="field-content"></div></div>      <div class="views-field views-field-view-node"><span class="field-content more-link"><a href="/go/service-alerts/february-8-vta-requires-rear-door-boarding-face-masks-and-adjust-service" hreflang="en">Read more</a></span></div></div>
+</div>
+  </div>
+
+    </div>
+  
+          </div>
+</div>
+
+      </div>
+    
+          <div class="view-empty">
+        There are currently no Service Alerts specifically for this Route.
+      </div>
+    
+          </div>
+      </div>
+</div>
+
+  </div>
+
+      </div>
+    
+          <div  class="layout__region layout__region--bottom">
+        <div class="block block-vta-route-schedule block-route-schedule">
+  
+    
+      <div class="schedule-table-introduction-header"><h2 class="schedule-table-introduction">Schedule</h2><p class="schedule-effective-date">(Effective Date: February 08, 2021)</p><p class="disclaimer-with-information"><a href="/faq/what-are-timepoints-bus-and-light-rail-schedules">Don't see your stop listed?</a> Plan to arrive at the stop or station at least five (5) minutes prior to the bus or train arrival time (all times are approximate). Rapid buses may depart up to five minutes earlier than the time shown, if traffic allows.</p><div class="route-schedule-pdf-wrapper"><a id="route-schedule-pdf" class="btn btn-primary" href="https://www.vta.org/sites/default/files/route_schedule_pdfs/current/route_20/route_20_schedule.pdf" target="_blank">PDF</a></div></div><div class="schedule-tab-general-wrapper"><ul role="tablist" class="tab-wrapper"><li class="tab tab-weekday-eb active"><a role="tab" id="weekday-eb" aria-controls="weekday-eb" aria-selected="true" href="#0" data-schedule-table-id="weekday-eb" data-day="Weekday" data-direction="EB">Weekday Eastbound</a></li><li class="tab tab-weekday-wb"><a role="tab" id="weekday-wb" aria-controls="weekday-wb" aria-selected="false" href="#0" data-schedule-table-id="weekday-wb" data-day="Weekday" data-direction="WB">Weekday Westbound</a></li></ul></div>
+<div class="schedule-travel-options-general-wrapper"><form class="schedule-travel-options-wrapper active" data-schedule-table-id="weekday-eb" data-drupal-selector="vta-route-schedule-form" action="/go/routes/20" method="post" id="vta-route-schedule-form" accept-charset="UTF-8">
+  <div class="travel-options-wrapper js-form-wrapper form-wrapper" role="tabpanel" id="weekday-eb" data-drupal-selector="edit-travel-options-wrapper"><input data-drupal-selector="edit-direction" type="hidden" name="direction" value="EB" />
+<input data-drupal-selector="edit-day-of-travel" type="hidden" name="day_of_travel" value="Weekday" />
+<div class="js-form-item form-item js-form-type-select form-type-select js-form-item-origin form-item-origin">
+      <label for="edit-origin">Departing from</label>
+        <select data-drupal-selector="edit-origin" id="edit-origin" name="origin" class="form-select"><option value="" selected="selected">Select origin</option><option value="2190">Frances &amp; Olson (N)</option><option value="865">Evelyn &amp; Bayview (E)</option><option value="1031">Fair Oaks &amp; California (N)</option><option value="2404">Arques &amp; Fair Oaks (E)</option><option value="2405">Arques &amp; Wolfe (E)</option><option value="2406">Arques &amp; Commercial (E)</option><option value="2407">Arques &amp; Commercial (E)</option><option value="2408">Arques &amp; Santa Trinita (E)</option><option value="2409">Arques &amp; Lawrence (E)</option><option value="2410">Arques &amp; Lakeside (E)</option><option value="2411">Arques &amp; Oakmead (E)</option><option value="2412">Scott &amp; Garrett (E)</option><option value="2413">Scott &amp; Oakmead Village (E)</option><option value="4691">Scott &amp; Lakeside (E)</option><option value="2522">Bowers &amp; Scott (N)</option><option value="2523">Mission College (S)</option><option value="1963">Mission College &amp; Great America (E)</option><option value="1964">Mission College &amp; Freedom (S)</option><option value="5931">Agnew &amp; Mission College (E)</option><option value="5934">Agnew &amp; Lakeshore (E)</option><option value="5936">Agnew &amp; Fillmore (E)</option><option value="2630">Agnew &amp; Avina (E)</option><option value="2631">Agnew &amp; Garrity (E)</option><option value="2632">Agnew &amp; Sun Fire (E)</option><option value="4571">Montague &amp; De La Cruz (E)</option><option value="4572">Montague &amp; 1st (E)</option><option value="1992">1st &amp; Orchard (S)</option><option value="5945">Plumeria &amp; 1st (E)</option><option value="4574">Montague &amp; Plumeria (S)</option><option value="5051">Montauge &amp; Trimble (E)</option><option value="4575">Montague &amp; O&#039;Toole (E)</option><option value="4576">Montague &amp; Main (E)</option><option value="3926">Montague &amp; Trade Zone (E)</option><option value="5878">Milpitas Transit Center (Bay 2)</option><option value="5884">Milpitas Transit Center (Bay 12)</option></select>
+        </div>
+<div class="js-form-item form-item js-form-type-select form-type-select js-form-item-destination form-item-destination">
+      <label for="edit-destination">Arriving at</label>
+        <select data-drupal-selector="edit-destination" id="edit-destination" name="destination" class="form-select"><option value="" selected="selected">Select destination</option><option value="2190">Frances &amp; Olson (N)</option><option value="865">Evelyn &amp; Bayview (E)</option><option value="1031">Fair Oaks &amp; California (N)</option><option value="2404">Arques &amp; Fair Oaks (E)</option><option value="2405">Arques &amp; Wolfe (E)</option><option value="2406">Arques &amp; Commercial (E)</option><option value="2407">Arques &amp; Commercial (E)</option><option value="2408">Arques &amp; Santa Trinita (E)</option><option value="2409">Arques &amp; Lawrence (E)</option><option value="2410">Arques &amp; Lakeside (E)</option><option value="2411">Arques &amp; Oakmead (E)</option><option value="2412">Scott &amp; Garrett (E)</option><option value="2413">Scott &amp; Oakmead Village (E)</option><option value="4691">Scott &amp; Lakeside (E)</option><option value="2522">Bowers &amp; Scott (N)</option><option value="2523">Mission College (S)</option><option value="1963">Mission College &amp; Great America (E)</option><option value="1964">Mission College &amp; Freedom (S)</option><option value="5931">Agnew &amp; Mission College (E)</option><option value="5934">Agnew &amp; Lakeshore (E)</option><option value="5936">Agnew &amp; Fillmore (E)</option><option value="2630">Agnew &amp; Avina (E)</option><option value="2631">Agnew &amp; Garrity (E)</option><option value="2632">Agnew &amp; Sun Fire (E)</option><option value="4571">Montague &amp; De La Cruz (E)</option><option value="4572">Montague &amp; 1st (E)</option><option value="1992">1st &amp; Orchard (S)</option><option value="5945">Plumeria &amp; 1st (E)</option><option value="4574">Montague &amp; Plumeria (S)</option><option value="5051">Montauge &amp; Trimble (E)</option><option value="4575">Montague &amp; O&#039;Toole (E)</option><option value="4576">Montague &amp; Main (E)</option><option value="3926">Montague &amp; Trade Zone (E)</option><option value="5878">Milpitas Transit Center (Bay 2)</option><option value="5884">Milpitas Transit Center (Bay 12)</option></select>
+        </div>
+<input class="btn-primary button button--primary js-form-submit form-submit" data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Submit" />
+</div>
+<input autocomplete="off" data-drupal-selector="form-htz0obkp57udcrojf3q30rcci7ndgvkf54u7eo3neqk" type="hidden" name="form_build_id" value="form-HTz0ObKP57uDcRojf3Q30RcCi7nDgVkF54U7Eo3neQk" />
+<input data-drupal-selector="edit-vta-route-schedule-form" type="hidden" name="form_id" value="vta_route_schedule_form" />
+
+</form>
+<form class="schedule-travel-options-wrapper" data-schedule-table-id="weekday-wb" data-drupal-selector="vta-route-schedule-form-2" action="/go/routes/20" method="post" id="vta-route-schedule-form--2" accept-charset="UTF-8">
+  <div class="travel-options-wrapper js-form-wrapper form-wrapper" role="tabpanel" id="weekday-wb" data-drupal-selector="edit-travel-options-wrapper"><input data-drupal-selector="edit-direction" type="hidden" name="direction" value="WB" />
+<input data-drupal-selector="edit-day-of-travel" type="hidden" name="day_of_travel" value="Weekday" />
+<div class="js-form-item form-item js-form-type-select form-type-select js-form-item-origin form-item-origin">
+      <label for="edit-origin--2">Departing from</label>
+        <select data-drupal-selector="edit-origin" id="edit-origin--2" name="origin" class="form-select"><option value="" selected="selected">Select origin</option><option value="5884">Milpitas Transit Center (Bay 12)</option><option value="4585">Montague &amp; Great Mall (W)</option><option value="4586">Montague &amp; McCandless (W)</option><option value="4587">Montague Expressway &amp; Main (W)</option><option value="4588">Montague &amp; McCarthy (W)</option><option value="4589">Montague &amp; Trimble (W)</option><option value="5946">Plumeria &amp; Montague (W)</option><option value="1982">1st &amp; Plumeria (N)</option><option value="1983">1st &amp; Orchard (N)</option><option value="2607">Montague &amp; 1st (W)</option><option value="2683">Agnew &amp; Montague (N)</option><option value="2684">Agnew &amp; Sun Fire (N)</option><option value="2685">Agnew &amp; Garrity (W)</option><option value="2686">Agnew &amp; Avina (W)</option><option value="5935">Agnew &amp; Cheeny (W)</option><option value="5933">Agnew &amp; Lakeshore (W)</option><option value="5932">Mission College &amp; Agnew (W)</option><option value="1932">Mission College &amp; Freedom (N)</option><option value="2523">Mission College (S)</option><option value="2535">Great America &amp; Mission College (S)</option><option value="1908">Scott &amp; Lakeside (W)</option><option value="1909">Scott &amp; Oakmead Village (W)</option><option value="1910">Scott &amp; Garrett (W)</option><option value="1911">Arques &amp; Oakmead (W)</option><option value="1912">Arques &amp; Lakeside (W)</option><option value="1913">Arques &amp; Lawrence (W)</option><option value="2489">Arques &amp; Santa Trinita (W)</option><option value="2490">Arques &amp; De Guigne (W)</option><option value="1918">Arques &amp; Deguigne (W)</option><option value="2491">Arques &amp; Wolfe (W)</option><option value="860">Fair Oaks &amp; Arques (S)</option><option value="861">Fair Oaks &amp; California (S)</option><option value="862">Evelyn &amp; Deodar (W)</option><option value="863">Evelyn &amp; Marshall (W)</option><option value="2190">Frances &amp; Olson (N)</option></select>
+        </div>
+<div class="js-form-item form-item js-form-type-select form-type-select js-form-item-destination form-item-destination">
+      <label for="edit-destination--2">Arriving at</label>
+        <select data-drupal-selector="edit-destination" id="edit-destination--2" name="destination" class="form-select"><option value="" selected="selected">Select destination</option><option value="5884">Milpitas Transit Center (Bay 12)</option><option value="4585">Montague &amp; Great Mall (W)</option><option value="4586">Montague &amp; McCandless (W)</option><option value="4587">Montague Expressway &amp; Main (W)</option><option value="4588">Montague &amp; McCarthy (W)</option><option value="4589">Montague &amp; Trimble (W)</option><option value="5946">Plumeria &amp; Montague (W)</option><option value="1982">1st &amp; Plumeria (N)</option><option value="1983">1st &amp; Orchard (N)</option><option value="2607">Montague &amp; 1st (W)</option><option value="2683">Agnew &amp; Montague (N)</option><option value="2684">Agnew &amp; Sun Fire (N)</option><option value="2685">Agnew &amp; Garrity (W)</option><option value="2686">Agnew &amp; Avina (W)</option><option value="5935">Agnew &amp; Cheeny (W)</option><option value="5933">Agnew &amp; Lakeshore (W)</option><option value="5932">Mission College &amp; Agnew (W)</option><option value="1932">Mission College &amp; Freedom (N)</option><option value="2523">Mission College (S)</option><option value="2535">Great America &amp; Mission College (S)</option><option value="1908">Scott &amp; Lakeside (W)</option><option value="1909">Scott &amp; Oakmead Village (W)</option><option value="1910">Scott &amp; Garrett (W)</option><option value="1911">Arques &amp; Oakmead (W)</option><option value="1912">Arques &amp; Lakeside (W)</option><option value="1913">Arques &amp; Lawrence (W)</option><option value="2489">Arques &amp; Santa Trinita (W)</option><option value="2490">Arques &amp; De Guigne (W)</option><option value="1918">Arques &amp; Deguigne (W)</option><option value="2491">Arques &amp; Wolfe (W)</option><option value="860">Fair Oaks &amp; Arques (S)</option><option value="861">Fair Oaks &amp; California (S)</option><option value="862">Evelyn &amp; Deodar (W)</option><option value="863">Evelyn &amp; Marshall (W)</option><option value="2190">Frances &amp; Olson (N)</option></select>
+        </div>
+<input class="btn-primary button button--primary js-form-submit form-submit" data-drupal-selector="edit-submit" type="submit" id="edit-submit--2" name="op" value="Submit" />
+</div>
+<input autocomplete="off" data-drupal-selector="form-u2mr-rcrvhcpyshlqjqsus1stbkfosmyowsnez9upvy" type="hidden" name="form_build_id" value="form-u2mR_RcRVhCpYsHLqjQsus1STBkfOsmYOWsnEz9UPvY" />
+<input data-drupal-selector="edit-vta-route-schedule-form-2" type="hidden" name="form_id" value="vta_route_schedule_form" />
+
+</form>
+</div>
+<div class="schedule-table-general-wrapper"><div lang="en" class="schedule-table-wrapper active" data-schedule-table-id="weekday-eb"><div role="tabpanel" tabindex="0" class="schedule-table-inner-wrapper"><div class="schedule-table-inner-deep-wrapper"><table class="route-schedule" aria-label="Route 20 Eastbound 1 schedule" role="”table”"><thead role="rowgroup" class="schedule-table-stops-wrapper"><tr role="row" class="schedule-table-stops"><th role="columnheader" scope="col" data-stop-id="2190">Frances &amp; Olson (N)</th><th role="columnheader" scope="col" data-stop-id="2405">Arques &amp; Wolfe (E)</th><th role="columnheader" scope="col" data-stop-id="2522">Bowers &amp; Scott (N)</th><th role="columnheader" scope="col" data-stop-id="2523">Mission College (S)</th><th role="columnheader" scope="col" data-stop-id="1992">1st &amp; Orchard (S)</th><th role="columnheader" scope="col" data-stop-id="5884">Milpitas Transit Center (Bay 12)</th></tr></thead><tbody role="rowgroup" class="schedule-table-trips-wrapper"><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044463"><td role="cell" data-stop-id="2190" data-timestamp="1616332500">6:15 AM</td><td role="cell" data-stop-id="2405" data-timestamp="1616332800">6:20 AM</td><td role="cell" data-stop-id="2522" data-timestamp="1616333220">6:27 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616333520">6:32 AM</td><td role="cell" data-stop-id="1992" data-timestamp="1616334240">6:44 AM</td><td role="cell" data-stop-id="5884" data-timestamp="1616335020">6:57 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044462"><td role="cell" data-stop-id="2190" data-timestamp="1616334300">6:45 AM</td><td role="cell" data-stop-id="2405" data-timestamp="1616334600">6:50 AM</td><td role="cell" data-stop-id="2522" data-timestamp="1616335020">6:57 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616335320">7:02 AM</td><td role="cell" data-stop-id="1992" data-timestamp="1616336100">7:15 AM</td><td role="cell" data-stop-id="5884" data-timestamp="1616336940">7:29 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044464"><td role="cell" data-stop-id="2190" data-timestamp="1616336100">7:15 AM</td><td role="cell" data-stop-id="2405" data-timestamp="1616336400">7:20 AM</td><td role="cell" data-stop-id="2522" data-timestamp="1616336820">7:27 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616337120">7:32 AM</td><td role="cell" data-stop-id="1992" data-timestamp="1616337960">7:46 AM</td><td role="cell" data-stop-id="5884" data-timestamp="1616338860">8:01 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044465"><td role="cell" data-stop-id="2190" data-timestamp="1616337900">7:45 AM</td><td role="cell" data-stop-id="2405" data-timestamp="1616338200">7:50 AM</td><td role="cell" data-stop-id="2522" data-timestamp="1616338620">7:57 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616338920">8:02 AM</td><td role="cell" data-stop-id="1992" data-timestamp="1616339760">8:16 AM</td><td role="cell" data-stop-id="5884" data-timestamp="1616340660">8:31 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044466"><td role="cell" data-stop-id="2190" data-timestamp="1616339700">8:15 AM</td><td role="cell" data-stop-id="2405" data-timestamp="1616340060">8:21 AM</td><td role="cell" data-stop-id="2522" data-timestamp="1616340540">8:29 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616340840">8:34 AM</td><td role="cell" data-stop-id="1992" data-timestamp="1616341740">8:49 AM</td><td role="cell" data-stop-id="5884" data-timestamp="1616342580">9:03 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044467"><td role="cell" data-stop-id="2190" data-timestamp="1616341500">8:45 AM</td><td role="cell" data-stop-id="2405" data-timestamp="1616341860">8:51 AM</td><td role="cell" data-stop-id="2522" data-timestamp="1616342340">8:59 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616342640">9:04 AM</td><td role="cell" data-stop-id="1992" data-timestamp="1616343480">9:18 AM</td><td role="cell" data-stop-id="5884" data-timestamp="1616344260">9:31 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044468"><td role="cell" data-stop-id="2190" data-timestamp="1616343300">9:15 AM</td><td role="cell" data-stop-id="2405" data-timestamp="1616343660">9:21 AM</td><td role="cell" data-stop-id="2522" data-timestamp="1616344140">9:29 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616344500">9:35 AM</td><td role="cell" data-stop-id="1992" data-timestamp="1616345340">9:49 AM</td><td role="cell" data-stop-id="5884" data-timestamp="1616346120">10:02 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044477"><td role="cell" data-stop-id="2190" data-timestamp="1616346900">10:15 AM</td><td role="cell" data-stop-id="2405" data-timestamp="1616347260">10:21 AM</td><td role="cell" data-stop-id="2522" data-timestamp="1616347740">10:29 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616348100">10:35 AM</td><td role="cell" data-stop-id="1992" data-timestamp="1616348940">10:49 AM</td><td role="cell" data-stop-id="5884" data-timestamp="1616349720">11:02 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044471"><td role="cell" data-stop-id="2190" data-timestamp="1616350500">11:15 AM</td><td role="cell" data-stop-id="2405" data-timestamp="1616350860">11:21 AM</td><td role="cell" data-stop-id="2522" data-timestamp="1616351340">11:29 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616351700">11:35 AM</td><td role="cell" data-stop-id="1992" data-timestamp="1616352540">11:49 AM</td><td role="cell" data-stop-id="5884" data-timestamp="1616353320">12:02 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044472"><td role="cell" data-stop-id="2190" data-timestamp="1616354100">12:15 PM</td><td role="cell" data-stop-id="2405" data-timestamp="1616354460">12:21 PM</td><td role="cell" data-stop-id="2522" data-timestamp="1616354940">12:29 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616355240">12:34 PM</td><td role="cell" data-stop-id="1992" data-timestamp="1616356080">12:48 PM</td><td role="cell" data-stop-id="5884" data-timestamp="1616356860">1:01 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044473"><td role="cell" data-stop-id="2190" data-timestamp="1616357700">1:15 PM</td><td role="cell" data-stop-id="2405" data-timestamp="1616358060">1:21 PM</td><td role="cell" data-stop-id="2522" data-timestamp="1616358600">1:30 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616358900">1:35 PM</td><td role="cell" data-stop-id="1992" data-timestamp="1616359740">1:49 PM</td><td role="cell" data-stop-id="5884" data-timestamp="1616360580">2:03 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044469"><td role="cell" data-stop-id="2190" data-timestamp="1616361300">2:15 PM</td><td role="cell" data-stop-id="2405" data-timestamp="1616361660">2:21 PM</td><td role="cell" data-stop-id="2522" data-timestamp="1616362200">2:30 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616362500">2:35 PM</td><td role="cell" data-stop-id="1992" data-timestamp="1616363340">2:49 PM</td><td role="cell" data-stop-id="5884" data-timestamp="1616364180">3:03 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044480"><td role="cell" data-stop-id="2190" data-timestamp="1616364900">3:15 PM</td><td role="cell" data-stop-id="2405" data-timestamp="1616365260">3:21 PM</td><td role="cell" data-stop-id="2522" data-timestamp="1616365800">3:30 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616366100">3:35 PM</td><td role="cell" data-stop-id="1992" data-timestamp="1616366940">3:49 PM</td><td role="cell" data-stop-id="5884" data-timestamp="1616367900">4:05 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044481"><td role="cell" data-stop-id="2190" data-timestamp="1616367660">4:01 PM</td><td role="cell" data-stop-id="2405" data-timestamp="1616368020">4:07 PM</td><td role="cell" data-stop-id="2522" data-timestamp="1616368560">4:16 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616368920">4:22 PM</td><td role="cell" data-stop-id="1992" data-timestamp="1616369820">4:37 PM</td><td role="cell" data-stop-id="5884" data-timestamp="1616370840">4:54 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044474"><td role="cell" data-stop-id="2190" data-timestamp="1616369700">4:35 PM</td><td role="cell" data-stop-id="2405" data-timestamp="1616370060">4:41 PM</td><td role="cell" data-stop-id="2522" data-timestamp="1616370600">4:50 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616370960">4:56 PM</td><td role="cell" data-stop-id="1992" data-timestamp="1616371860">5:11 PM</td><td role="cell" data-stop-id="5884" data-timestamp="1616372940">5:29 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044479"><td role="cell" data-stop-id="2190" data-timestamp="1616371500">5:05 PM</td><td role="cell" data-stop-id="2405" data-timestamp="1616371860">5:11 PM</td><td role="cell" data-stop-id="2522" data-timestamp="1616372400">5:20 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616372700">5:25 PM</td><td role="cell" data-stop-id="1992" data-timestamp="1616373540">5:39 PM</td><td role="cell" data-stop-id="5884" data-timestamp="1616374680">5:58 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044475"><td role="cell" data-stop-id="2190" data-timestamp="1616373300">5:35 PM</td><td role="cell" data-stop-id="2405" data-timestamp="1616373660">5:41 PM</td><td role="cell" data-stop-id="2522" data-timestamp="1616374200">5:50 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616374500">5:55 PM</td><td role="cell" data-stop-id="1992" data-timestamp="1616375280">6:08 PM</td><td role="cell" data-stop-id="5884" data-timestamp="1616376300">6:25 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044470"><td role="cell" data-stop-id="2190" data-timestamp="1616375100">6:05 PM</td><td role="cell" data-stop-id="2405" data-timestamp="1616375460">6:11 PM</td><td role="cell" data-stop-id="2522" data-timestamp="1616376000">6:20 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616376300">6:25 PM</td><td role="cell" data-stop-id="1992" data-timestamp="1616377080">6:38 PM</td><td role="cell" data-stop-id="5884" data-timestamp="1616378040">6:54 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044476"><td role="cell" data-stop-id="2190" data-timestamp="1616376900">6:35 PM</td><td role="cell" data-stop-id="2405" data-timestamp="1616377260">6:41 PM</td><td role="cell" data-stop-id="2522" data-timestamp="1616377740">6:49 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616378040">6:54 PM</td><td role="cell" data-stop-id="1992" data-timestamp="1616378760">7:06 PM</td><td role="cell" data-stop-id="5884" data-timestamp="1616379660">7:21 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044478"><td role="cell" data-stop-id="2190" data-timestamp="1616378700">7:05 PM</td><td role="cell" data-stop-id="2405" data-timestamp="1616379060">7:11 PM</td><td role="cell" data-stop-id="2522" data-timestamp="1616379540">7:19 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616379840">7:24 PM</td><td role="cell" data-stop-id="1992" data-timestamp="1616380560">7:36 PM</td><td role="cell" data-stop-id="5884" data-timestamp="1616381460">7:51 PM</td></tr></tbody></table></div></div></div><div lang="en" class="schedule-table-wrapper" data-schedule-table-id="weekday-wb"><div role="tabpanel" tabindex="0" class="schedule-table-inner-wrapper"><div class="schedule-table-inner-deep-wrapper"><table class="route-schedule" aria-label="Route 20 Westbound 1 schedule" role="”table”"><thead role="rowgroup" class="schedule-table-stops-wrapper"><tr role="row" class="schedule-table-stops"><th role="columnheader" scope="col" data-stop-id="5884">Milpitas Transit Center (Bay 12)</th><th role="columnheader" scope="col" data-stop-id="1983">1st &amp; Orchard (N)</th><th role="columnheader" scope="col" data-stop-id="2523">Mission College (S)</th><th role="columnheader" scope="col" data-stop-id="1908">Scott &amp; Lakeside (W)</th><th role="columnheader" scope="col" data-stop-id="2491">Arques &amp; Wolfe (W)</th><th role="columnheader" scope="col" data-stop-id="2190">Frances &amp; Olson (N)</th></tr></thead><tbody role="rowgroup" class="schedule-table-trips-wrapper"><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044482"><td role="cell" data-stop-id="5884" data-timestamp="1616332980">6:23 AM</td><td role="cell" data-stop-id="1983" data-timestamp="1616333640">6:34 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616334300">6:45 AM</td><td role="cell" data-stop-id="1908" data-timestamp="1616334660">6:51 AM</td><td role="cell" data-stop-id="2491" data-timestamp="1616335080">6:58 AM</td><td role="cell" data-stop-id="2190" data-timestamp="1616335500">7:05 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044483"><td role="cell" data-stop-id="5884" data-timestamp="1616334780">6:53 AM</td><td role="cell" data-stop-id="1983" data-timestamp="1616335440">7:04 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616336100">7:15 AM</td><td role="cell" data-stop-id="1908" data-timestamp="1616336460">7:21 AM</td><td role="cell" data-stop-id="2491" data-timestamp="1616336880">7:28 AM</td><td role="cell" data-stop-id="2190" data-timestamp="1616337300">7:35 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044484"><td role="cell" data-stop-id="5884" data-timestamp="1616336460">7:21 AM</td><td role="cell" data-stop-id="1983" data-timestamp="1616337180">7:33 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616337900">7:45 AM</td><td role="cell" data-stop-id="1908" data-timestamp="1616338260">7:51 AM</td><td role="cell" data-stop-id="2491" data-timestamp="1616338680">7:58 AM</td><td role="cell" data-stop-id="2190" data-timestamp="1616339160">8:06 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044485"><td role="cell" data-stop-id="5884" data-timestamp="1616338080">7:48 AM</td><td role="cell" data-stop-id="1983" data-timestamp="1616338860">8:01 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616339640">8:14 AM</td><td role="cell" data-stop-id="1908" data-timestamp="1616340060">8:21 AM</td><td role="cell" data-stop-id="2491" data-timestamp="1616340480">8:28 AM</td><td role="cell" data-stop-id="2190" data-timestamp="1616340960">8:36 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044486"><td role="cell" data-stop-id="5884" data-timestamp="1616339820">8:17 AM</td><td role="cell" data-stop-id="1983" data-timestamp="1616340660">8:31 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616341440">8:44 AM</td><td role="cell" data-stop-id="1908" data-timestamp="1616341860">8:51 AM</td><td role="cell" data-stop-id="2491" data-timestamp="1616342280">8:58 AM</td><td role="cell" data-stop-id="2190" data-timestamp="1616342760">9:06 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044487"><td role="cell" data-stop-id="5884" data-timestamp="1616341440">8:44 AM</td><td role="cell" data-stop-id="1983" data-timestamp="1616342400">9:00 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616343300">9:15 AM</td><td role="cell" data-stop-id="1908" data-timestamp="1616343720">9:22 AM</td><td role="cell" data-stop-id="2491" data-timestamp="1616344140">9:29 AM</td><td role="cell" data-stop-id="2190" data-timestamp="1616344560">9:36 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044488"><td role="cell" data-stop-id="5884" data-timestamp="1616343420">9:17 AM</td><td role="cell" data-stop-id="1983" data-timestamp="1616344380">9:33 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616345220">9:47 AM</td><td role="cell" data-stop-id="1908" data-timestamp="1616345640">9:54 AM</td><td role="cell" data-stop-id="2491" data-timestamp="1616346060">10:01 AM</td><td role="cell" data-stop-id="2190" data-timestamp="1616346480">10:08 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044489"><td role="cell" data-stop-id="5884" data-timestamp="1616346540">10:09 AM</td><td role="cell" data-stop-id="1983" data-timestamp="1616347200">10:20 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616347920">10:32 AM</td><td role="cell" data-stop-id="1908" data-timestamp="1616348340">10:39 AM</td><td role="cell" data-stop-id="2491" data-timestamp="1616348760">10:46 AM</td><td role="cell" data-stop-id="2190" data-timestamp="1616349180">10:53 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044490"><td role="cell" data-stop-id="5884" data-timestamp="1616350140">11:09 AM</td><td role="cell" data-stop-id="1983" data-timestamp="1616350800">11:20 AM</td><td role="cell" data-stop-id="2523" data-timestamp="1616351460">11:31 AM</td><td role="cell" data-stop-id="1908" data-timestamp="1616351820">11:37 AM</td><td role="cell" data-stop-id="2491" data-timestamp="1616352240">11:44 AM</td><td role="cell" data-stop-id="2190" data-timestamp="1616352720">11:52 AM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044499"><td role="cell" data-stop-id="5884" data-timestamp="1616353740">12:09 PM</td><td role="cell" data-stop-id="1983" data-timestamp="1616354400">12:20 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616355060">12:31 PM</td><td role="cell" data-stop-id="1908" data-timestamp="1616355420">12:37 PM</td><td role="cell" data-stop-id="2491" data-timestamp="1616355840">12:44 PM</td><td role="cell" data-stop-id="2190" data-timestamp="1616356320">12:52 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044491"><td role="cell" data-stop-id="5884" data-timestamp="1616357340">1:09 PM</td><td role="cell" data-stop-id="1983" data-timestamp="1616358000">1:20 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616358660">1:31 PM</td><td role="cell" data-stop-id="1908" data-timestamp="1616359020">1:37 PM</td><td role="cell" data-stop-id="2491" data-timestamp="1616359440">1:44 PM</td><td role="cell" data-stop-id="2190" data-timestamp="1616359920">1:52 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044492"><td role="cell" data-stop-id="5884" data-timestamp="1616360940">2:09 PM</td><td role="cell" data-stop-id="1983" data-timestamp="1616361600">2:20 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616362260">2:31 PM</td><td role="cell" data-stop-id="1908" data-timestamp="1616362620">2:37 PM</td><td role="cell" data-stop-id="2491" data-timestamp="1616363040">2:44 PM</td><td role="cell" data-stop-id="2190" data-timestamp="1616363520">2:52 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044493"><td role="cell" data-stop-id="5884" data-timestamp="1616364540">3:09 PM</td><td role="cell" data-stop-id="1983" data-timestamp="1616365200">3:20 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616365860">3:31 PM</td><td role="cell" data-stop-id="1908" data-timestamp="1616366220">3:37 PM</td><td role="cell" data-stop-id="2491" data-timestamp="1616366640">3:44 PM</td><td role="cell" data-stop-id="2190" data-timestamp="1616367120">3:52 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044494"><td role="cell" data-stop-id="5884" data-timestamp="1616367540">3:59 PM</td><td role="cell" data-stop-id="1983" data-timestamp="1616368200">4:10 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616368860">4:21 PM</td><td role="cell" data-stop-id="1908" data-timestamp="1616369220">4:27 PM</td><td role="cell" data-stop-id="2491" data-timestamp="1616369640">4:34 PM</td><td role="cell" data-stop-id="2190" data-timestamp="1616370120">4:42 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044495"><td role="cell" data-stop-id="5884" data-timestamp="1616369580">4:33 PM</td><td role="cell" data-stop-id="1983" data-timestamp="1616370240">4:44 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616370960">4:56 PM</td><td role="cell" data-stop-id="1908" data-timestamp="1616371320">5:02 PM</td><td role="cell" data-stop-id="2491" data-timestamp="1616371740">5:09 PM</td><td role="cell" data-stop-id="2190" data-timestamp="1616372280">5:18 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044501"><td role="cell" data-stop-id="5884" data-timestamp="1616371380">5:03 PM</td><td role="cell" data-stop-id="1983" data-timestamp="1616372040">5:14 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616372760">5:26 PM</td><td role="cell" data-stop-id="1908" data-timestamp="1616373120">5:32 PM</td><td role="cell" data-stop-id="2491" data-timestamp="1616373540">5:39 PM</td><td role="cell" data-stop-id="2190" data-timestamp="1616374080">5:48 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044500"><td role="cell" data-stop-id="5884" data-timestamp="1616373360">5:36 PM</td><td role="cell" data-stop-id="1983" data-timestamp="1616373960">5:46 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616374680">5:58 PM</td><td role="cell" data-stop-id="1908" data-timestamp="1616374980">6:03 PM</td><td role="cell" data-stop-id="2491" data-timestamp="1616375400">6:10 PM</td><td role="cell" data-stop-id="2190" data-timestamp="1616375880">6:18 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044496"><td role="cell" data-stop-id="5884" data-timestamp="1616375160">6:06 PM</td><td role="cell" data-stop-id="1983" data-timestamp="1616375760">6:16 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616376480">6:28 PM</td><td role="cell" data-stop-id="1908" data-timestamp="1616376780">6:33 PM</td><td role="cell" data-stop-id="2491" data-timestamp="1616377200">6:40 PM</td><td role="cell" data-stop-id="2190" data-timestamp="1616377680">6:48 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044497"><td role="cell" data-stop-id="5884" data-timestamp="1616376960">6:36 PM</td><td role="cell" data-stop-id="1983" data-timestamp="1616377560">6:46 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616378280">6:58 PM</td><td role="cell" data-stop-id="1908" data-timestamp="1616378580">7:03 PM</td><td role="cell" data-stop-id="2491" data-timestamp="1616379000">7:10 PM</td><td role="cell" data-stop-id="2190" data-timestamp="1616379480">7:18 PM</td></tr><tr role="row" scope="row" class="schedule-table-trip" data-trip-id="3044498"><td role="cell" data-stop-id="5884" data-timestamp="1616378760">7:06 PM</td><td role="cell" data-stop-id="1983" data-timestamp="1616379360">7:16 PM</td><td role="cell" data-stop-id="2523" data-timestamp="1616380080">7:28 PM</td><td role="cell" data-stop-id="1908" data-timestamp="1616380380">7:33 PM</td><td role="cell" data-stop-id="2491" data-timestamp="1616380800">7:40 PM</td><td role="cell" data-stop-id="2190" data-timestamp="1616381280">7:48 PM</td></tr></tbody></table></div></div></div></div>
+
+  </div>
+
+      </div>
+      </div>
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+          
+      </div>    </main>
+
+      </div>
+
+  
+
+</div>
+
+  <footer id="footer">
+      <div class="region region--footer-first clearfix">
+      <div class="layout-container">
+      <div id="block-footer-phone-number" class="block block-block-content block-block-content24247295-06aa-486f-b00f-0e8c8e0a637f">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2>Contact Customer Service</h2>
+
+<p><span><strong>(408) 321-2300</strong>  |  <a href="mailto:customer.service@vta.org">customer.service@vta.org</a>  |  <a href="http://vtaorg.force.com/feedback">Online</a></span></p>
+
+<h2>Call Center Hours</h2>
+
+<p><strong>Monday – Friday<br />
+6 am – 7 pm<br /><br />
+Saturday<br />
+7:30 am – 4 pm</strong></p>
+</div>
+      
+  </div>
+<div id="block-footer-address" class="block block-block-content block-block-contentdc189bfa-24a3-4fcc-8828-36357088a1af">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="address">
+<h2>Downtown Customer Service Center</h2>
+
+<p>55-A West Santa Clara Street<br />
+San Jose, CA 95113<br /><strong>Monday - Friday 9 am to 6 pm</strong></p>
+</div>
+
+<div class="address">
+<h2>VTA Headquarters</h2>
+
+<p>3331 North First Street<br />
+San Jose, CA, 95134<br /><strong>Closed Due to COVID-19 Public Health Orders</strong></p>
+</div>
+</div>
+      
+  </div>
+<nav role="navigation" aria-labelledby="block-de-theme-footer-menu" id="block-de-theme-footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-de-theme-footer-menu">Footer menu</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/about/contact" data-drupal-link-system-path="node/2161">Contact</a>
+              </li>
+                <li class="menu-item">
+        <a href="/about/careers" data-drupal-link-system-path="node/781">Careers</a>
+              </li>
+                <li class="menu-item">
+        <a href="/business-center" data-drupal-link-system-path="node/716">Business Center</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://santaclaravta.iqm2.com/Citizens/default.aspx">Board Agendas</a>
+              </li>
+                <li class="menu-item">
+        <a href="/go/accessibility" data-drupal-link-system-path="node/1791">Accessibility</a>
+              </li>
+                <li class="menu-item">
+        <a href="/about/title-vi" data-drupal-link-system-path="node/13401">Title VI</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    </div>
+  </div>
+
+      <div class="region region--footer-second clearfix">
+      <div class="layout-container">
+      <div id="block-footer-copyright" class="block block-block-content block-block-content88161f4b-2d44-4e41-8f6c-2b2cc18f5b6f">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="9252f38c-794b-444d-a870-6554a5d6e264" href="/privacy-policy" title="Privacy Policy">VTA PRIVACY POLICY</a><br />COPYRIGHT 2019 SANTA CLARA VALLEY TRANSPORTATION AUTHORITY (VTA). ALL RIGHTS RESERVED.</p>
+</div>
+      
+  </div>
+<div id="block-google-translate" class="block block-gtranslate block-gtranslate-block">
+  
+    
+      
+<div class="gtranslate">
+<script type="text/javascript">
+/* <![CDATA[ */
+eval(unescape("eval%28function%28p%2Ca%2Cc%2Ck%2Ce%2Cr%29%7Be%3Dfunction%28c%29%7Breturn%28c%3Ca%3F%27%27%3Ae%28parseInt%28c/a%29%29%29+%28%28c%3Dc%25a%29%3E35%3FString.fromCharCode%28c+29%29%3Ac.toString%2836%29%29%7D%3Bif%28%21%27%27.replace%28/%5E/%2CString%29%29%7Bwhile%28c--%29r%5Be%28c%29%5D%3Dk%5Bc%5D%7C%7Ce%28c%29%3Bk%3D%5Bfunction%28e%29%7Breturn%20r%5Be%5D%7D%5D%3Be%3Dfunction%28%29%7Breturn%27%5C%5Cw+%27%7D%3Bc%3D1%7D%3Bwhile%28c--%29if%28k%5Bc%5D%29p%3Dp.replace%28new%20RegExp%28%27%5C%5Cb%27+e%28c%29+%27%5C%5Cb%27%2C%27g%27%29%2Ck%5Bc%5D%29%3Breturn%20p%7D%28%276%207%28a%2Cb%29%7Bn%7B4%282.9%29%7B3%20c%3D2.9%28%22o%22%29%3Bc.p%28b%2Cf%2Cf%29%3Ba.q%28c%29%7Dg%7B3%20c%3D2.r%28%29%3Ba.s%28%5C%27t%5C%27+b%2Cc%29%7D%7Du%28e%29%7B%7D%7D6%20h%28a%29%7B4%28a.8%29a%3Da.8%3B4%28a%3D%3D%5C%27%5C%27%29v%3B3%20b%3Da.w%28%5C%27%7C%5C%27%29%5B1%5D%3B3%20c%3B3%20d%3D2.x%28%5C%27y%5C%27%29%3Bz%283%20i%3D0%3Bi%3Cd.5%3Bi++%294%28d%5Bi%5D.A%3D%3D%5C%27B-C-D%5C%27%29c%3Dd%5Bi%5D%3B4%282.j%28%5C%27k%5C%27%29%3D%3DE%7C%7C2.j%28%5C%27k%5C%27%29.l.5%3D%3D0%7C%7Cc.5%3D%3D0%7C%7Cc.l.5%3D%3D0%29%7BF%286%28%29%7Bh%28a%29%7D%2CG%29%7Dg%7Bc.8%3Db%3B7%28c%2C%5C%27m%5C%27%29%3B7%28c%2C%5C%27m%5C%27%29%7D%7D%27%2C43%2C43%2C%27%7C%7Cdocument%7Cvar%7Cif%7Clength%7Cfunction%7CGTranslateFireEvent%7Cvalue%7CcreateEvent%7C%7C%7C%7C%7C%7Ctrue%7Celse%7CdoGTranslate%7C%7CgetElementById%7Cgoogle_translate_element2%7CinnerHTML%7Cchange%7Ctry%7CHTMLEvents%7CinitEvent%7CdispatchEvent%7CcreateEventObject%7CfireEvent%7Con%7Ccatch%7Creturn%7Csplit%7CgetElementsByTagName%7Cselect%7Cfor%7CclassName%7Cgoog%7Cte%7Ccombo%7Cnull%7CsetTimeout%7C500%27.split%28%27%7C%27%29%2C0%2C%7B%7D%29%29"))
+/* ]]> */
+</script><style type="text/css">
+<!--
+#goog-gt-tt {display:none !important;}
+
+.goog-te-banner-frame {display:none !important;}
+
+.goog-te-menu-value:hover {text-decoration:none !important;}
+
+body {top:0 !important;}
+
+#google_translate_element2 {display:none!important;}
+-->
+</style><div id="google_translate_element2"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit2() {
+    new google.translate.TranslateElement({pageLanguage: 'en',autoDisplay: false}, 'google_translate_element2');
+    jQuery('#google_translate_element2 select').each(function (i) {jQuery(this).attr('title', 'Select language');});
+    jQuery('#goog-gt-tt img, #google_translate_element2 img').each(function (i) {jQuery(this).attr('alt', 'null');});
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script><label class="visually-hidden" for="gtranslate-dropdown">Select language</label><select onchange="doGTranslate(this);" id="gtranslate-dropdown"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|af" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -688px;padding-left:18px;">Afrikaans</option><option value="en|sq" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -560px;padding-left:18px;">Albanian</option><option value="en|ar" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -16px;padding-left:18px;">Arabic</option><option value="en|hy" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -832px;padding-left:18px;">Armenian</option><option value="en|az" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -848px;padding-left:18px;">Azerbaijani</option><option value="en|eu" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -864px;padding-left:18px;">Basque</option><option value="en|be" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -768px;padding-left:18px;">Belarusian</option><option value="en|bn" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -928px;padding-left:18px;">Bengali</option><option value="en|bs" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -944px;padding-left:18px;">Bosnian</option><option value="en|bg" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -32px;padding-left:18px;">Bulgarian</option><option value="en|ca" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -384px;padding-left:18px;">Catalan</option><option value="en|ceb" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -960px;padding-left:18px;">Cebuano</option><option value="en|zh-CN" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -48px;padding-left:18px;">Chinese (Simplified)</option><option value="en|zh-TW" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -64px;padding-left:18px;">Chinese (Traditional)</option><option value="en|hr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -80px;padding-left:18px;">Croatian</option><option value="en|cs" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -96px;padding-left:18px;">Czech</option><option value="en|da" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -112px;padding-left:18px;">Danish</option><option value="en|nl" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -128px;padding-left:18px;">Dutch</option><option value="en|eo" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -976px;padding-left:18px;">Esperanto</option><option value="en|et" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -576px;padding-left:18px;">Estonian</option><option value="en|tl" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -400px;padding-left:18px;">Filipino</option><option value="en|fi" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -144px;padding-left:18px;">Finnish</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|gl" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -592px;padding-left:18px;">Galician</option><option value="en|ka" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -880px;padding-left:18px;">Georgian</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|el" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -192px;padding-left:18px;">Greek</option><option value="en|gu" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -992px;padding-left:18px;">Gujarati</option><option value="en|ht" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -896px;padding-left:18px;">Haitian Creole</option><option value="en|ha" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1008px;padding-left:18px;">Hausa</option><option value="en|iw" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -416px;padding-left:18px;">Hebrew</option><option value="en|hi" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -208px;padding-left:18px;">Hindi</option><option value="en|hmn" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1024px;padding-left:18px;">Hmong</option><option value="en|hu" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -608px;padding-left:18px;">Hungarian</option><option value="en|is" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -784px;padding-left:18px;">Icelandic</option><option value="en|ig" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1040px;padding-left:18px;">Igbo</option><option value="en|id" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -432px;padding-left:18px;">Indonesian</option><option value="en|ga" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -736px;padding-left:18px;">Irish</option><option value="en|it" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -224px;padding-left:18px;">Italian</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|jw" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1056px;padding-left:18px;">Javanese</option><option value="en|kn" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1072px;padding-left:18px;">Kannada</option><option value="en|km" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1088px;padding-left:18px;">Khmer</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|lo" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1104px;padding-left:18px;">Lao</option><option value="en|la" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1120px;padding-left:18px;">Latin</option><option value="en|lv" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -448px;padding-left:18px;">Latvian</option><option value="en|lt" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -464px;padding-left:18px;">Lithuanian</option><option value="en|mk" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -800px;padding-left:18px;">Macedonian</option><option value="en|ms" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -704px;padding-left:18px;">Malay</option><option value="en|mt" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -624px;padding-left:18px;">Maltese</option><option value="en|mi" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1136px;padding-left:18px;">Maori</option><option value="en|mr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1152px;padding-left:18px;">Marathi</option><option value="en|mn" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1168px;padding-left:18px;">Mongolian</option><option value="en|ne" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1184px;padding-left:18px;">Nepali</option><option value="en|no" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -272px;padding-left:18px;">Norwegian</option><option value="en|fa" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -672px;padding-left:18px;">Persian</option><option value="en|pl" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -288px;padding-left:18px;">Polish</option><option value="en|pt" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -304px;padding-left:18px;">Portuguese</option><option value="en|pa" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1200px;padding-left:18px;">Punjabi</option><option value="en|ro" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -320px;padding-left:18px;">Romanian</option><option value="en|ru" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -336px;padding-left:18px;">Russian</option><option value="en|sr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -480px;padding-left:18px;">Serbian</option><option value="en|sk" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -496px;padding-left:18px;">Slovak</option><option value="en|sl" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -512px;padding-left:18px;">Slovenian</option><option value="en|so" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1216px;padding-left:18px;">Somali</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option><option value="en|sw" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -720px;padding-left:18px;">Swahili</option><option value="en|sv" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -368px;padding-left:18px;">Swedish</option><option value="en|ta" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1232px;padding-left:18px;">Tamil</option><option value="en|te" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1248px;padding-left:18px;">Telugu</option><option value="en|th" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -640px;padding-left:18px;">Thai</option><option value="en|tr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -656px;padding-left:18px;">Turkish</option><option value="en|uk" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -528px;padding-left:18px;">Ukrainian</option><option value="en|ur" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -912px;padding-left:18px;">Urdu</option><option value="en|vi" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -544px;padding-left:18px;">Vietnamese</option><option value="en|cy" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -752px;padding-left:18px;">Welsh</option><option value="en|yi" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -816px;padding-left:18px;">Yiddish</option><option value="en|yo" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1264px;padding-left:18px;">Yoruba</option><option value="en|zu" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -1280px;padding-left:18px;">Zulu</option></select>
+</div>
+  </div>
+<div id="block-social-media-links" class="block-social-media-links block block-social-media-links-block">
+  
+    
+      
+
+<ul class="social-media-links--platforms platforms inline horizontal">
+      <li>
+      <a class="social-media-link-icon--facebook" href="https://www.facebook.com/scvta?ref=ts"  target="_blank" aria-label="Follow VTA on Facebook" title="Follow VTA on Facebook" >
+        <span class='fa fa-facebook fa-2x'></span>
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--twitter" href="https://www.twitter.com/VTA"  target="_blank" aria-label="Follow VTA on Twitter" title="Follow VTA on Twitter" >
+        <span class='fa fa-twitter fa-2x'></span>
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--instagram" href="https://www.instagram.com/scvta"  target="_blank" aria-label="Follow VTA on Instagram" title="Follow VTA on Instagram" >
+        <span class='fa fa-instagram fa-2x'></span>
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--youtube" href="https://www.youtube.com/SCVTA"  target="_blank" aria-label="Follow VTA on Youtube" title="Follow VTA on Youtube" >
+        <span class='fa fa-youtube fa-2x'></span>
+      </a>
+
+          </li>
+  </ul>
+
+  </div>
+
+    </div>
+  </div>
+
+  </footer>
+
+
+  </div>
+
+    
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18816","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"addtoany\/addtoany,classy\/base,classy\/messages,classy\/node,core\/drupal.collapse,core\/html5shiv,core\/normalize,de_theme\/base,de_theme\/de_accordion,de_theme\/de_lightbox,layout_discovery\/twocol,search_api_autocomplete\/search_api_autocomplete,social_media_links\/fontawesome.component,social_media_links\/social_media_links.theme,system\/base,views\/views.module,vta_map\/google_maps,vta_route_schedule\/vta_route_navigation,vta_route_schedule\/vta_route_schedule_general","theme":"de_theme","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/search":true},"schedule_time":null,"lightbox_interactive":true,"route_shapes":{"EB":{"101380":[{"lat":37.377624509999997,"lng":-122.03100585999999},{"lat":37.377994540000003,"lng":-122.03088379},{"lat":37.37762833,"lng":-122.02985382},{"lat":37.377262119999997,"lng":-122.02876282},{"lat":37.377254489999999,"lng":-122.02873993},{"lat":37.377204900000002,"lng":-122.02861786},{"lat":37.376945499999998,"lng":-122.02780151},{"lat":37.376689910000003,"lng":-122.02698517},{"lat":37.376342770000001,"lng":-122.02597046},{"lat":37.37625122,"lng":-122.02567291},{"lat":37.376193999999998,"lng":-122.02553558},{"lat":37.37603378,"lng":-122.02524567},{"lat":37.37594223,"lng":-122.02510071},{"lat":37.375835420000001,"lng":-122.02496338},{"lat":37.375583650000003,"lng":-122.02468872},{"lat":37.375473020000001,"lng":-122.02457428},{"lat":37.375247960000003,"lng":-122.02440643},{"lat":37.375152589999999,"lng":-122.02433777},{"lat":37.374988559999998,"lng":-122.0242157},{"lat":37.37478256,"lng":-122.02406311},{"lat":37.374553679999998,"lng":-122.02387238},{"lat":37.374431610000002,"lng":-122.02375793},{"lat":37.374309539999999,"lng":-122.02361298},{"lat":37.374198909999997,"lng":-122.02344513},{"lat":37.37411118,"lng":-122.02327728},{"lat":37.374031070000001,"lng":-122.02306366000001},{"lat":37.37398529,"lng":-122.02291107000001},{"lat":37.373905180000001,"lng":-122.02251434},{"lat":37.373863219999997,"lng":-122.02230835},{"lat":37.373718259999997,"lng":-122.02160644999999},{"lat":37.373680110000002,"lng":-122.02143097},{"lat":37.373596190000001,"lng":-122.02114868},{"lat":37.373584749999999,"lng":-122.02111053},{"lat":37.373561860000002,"lng":-122.02105713},{"lat":37.373630519999999,"lng":-122.02103424000001},{"lat":37.373870850000003,"lng":-122.02097320999999},{"lat":37.37405777,"lng":-122.02092743},{"lat":37.374439240000001,"lng":-122.02081299},{"lat":37.374595640000003,"lng":-122.02075195},{"lat":37.374706269999997,"lng":-122.02071381},{"lat":37.374885560000003,"lng":-122.02063751},{"lat":37.375049590000003,"lng":-122.02054596000001},{"lat":37.375236510000001,"lng":-122.02046967},{"lat":37.37543488,"lng":-122.02038573999999},{"lat":37.375568389999998,"lng":-122.02031708},{"lat":37.375793459999997,"lng":-122.02022552},{"lat":37.376228330000004,"lng":-122.02011108000001},{"lat":37.376293179999998,"lng":-122.0200882},{"lat":37.376434330000002,"lng":-122.02002716},{"lat":37.376815800000003,"lng":-122.0198822},{"lat":37.3770752,"lng":-122.01979065},{"lat":37.377147669999999,"lng":-122.01977539000001},{"lat":37.377464289999999,"lng":-122.01966858},{"lat":37.377624509999997,"lng":-122.01963043000001},{"lat":37.377853389999999,"lng":-122.01956177},{"lat":37.37829971,"lng":-122.01943970000001},{"lat":37.37854385,"lng":-122.0193634},{"lat":37.378948209999997,"lng":-122.01924133},{"lat":37.379592899999999,"lng":-122.01900482000001},{"lat":37.380050660000002,"lng":-122.01884459999999},{"lat":37.380245209999998,"lng":-122.01877594},{"lat":37.380397799999997,"lng":-122.01873016},{"lat":37.380512240000002,"lng":-122.01869202},{"lat":37.380611420000001,"lng":-122.01865386999999},{"lat":37.380760189999997,"lng":-122.01860809},{"lat":37.381019590000001,"lng":-122.01852417000001},{"lat":37.381591800000002,"lng":-122.01833344000001},{"lat":37.381668089999998,"lng":-122.01831055},{"lat":37.381336210000001,"lng":-122.01681519},{"lat":37.381252289999999,"lng":-122.01641846},{"lat":37.38111877,"lng":-122.01580048},{"lat":37.381076810000003,"lng":-122.01560974},{"lat":37.381023409999997,"lng":-122.01499176},{"lat":37.381023409999997,"lng":-122.0148468},{"lat":37.381015779999998,"lng":-122.01480865000001},{"lat":37.38098145,"lng":-122.01365662000001},{"lat":37.380939480000002,"lng":-122.01235962},{"lat":37.380939480000002,"lng":-122.01200104},{"lat":37.380939480000002,"lng":-122.01180266999999},{"lat":37.380943299999998,"lng":-122.01027679000001},{"lat":37.380943299999998,"lng":-122.00971985},{"lat":37.380916599999999,"lng":-122.00732422},{"lat":37.380905149999997,"lng":-122.00646209999999},{"lat":37.380897519999998,"lng":-122.00584412000001},{"lat":37.380889889999999,"lng":-122.00566864},{"lat":37.380863189999999,"lng":-122.00543976},{"lat":37.380527499999999,"lng":-122.00320435},{"lat":37.380512240000002,"lng":-122.00299072},{"lat":37.380500789999999,"lng":-122.00257874},{"lat":37.380500789999999,"lng":-122.0022049},{"lat":37.38049316,"lng":-122.00139618},{"lat":37.380489349999998,"lng":-122.00093079},{"lat":37.380485530000001,"lng":-122.00055695},{"lat":37.380477910000003,"lng":-121.99952698},{"lat":37.380477910000003,"lng":-121.99821472000001},{"lat":37.380477910000003,"lng":-121.99741364},{"lat":37.380439760000002,"lng":-121.99729155999999},{"lat":37.380439760000002,"lng":-121.99700165},{"lat":37.380451200000003,"lng":-121.99598693999999},{"lat":37.380451200000003,"lng":-121.99584960999999},{"lat":37.380455019999999,"lng":-121.99573517},{"lat":37.38044739,"lng":-121.99501038},{"lat":37.380439760000002,"lng":-121.99428558},{"lat":37.380435939999998,"lng":-121.99420166},{"lat":37.38042068,"lng":-121.99338530999999},{"lat":37.380409239999999,"lng":-121.9924469},{"lat":37.380348210000001,"lng":-121.99171448},{"lat":37.380325319999997,"lng":-121.99105835},{"lat":37.380340580000002,"lng":-121.9906311},{"lat":37.380409239999999,"lng":-121.98964691},{"lat":37.380428309999999,"lng":-121.9879837},{"lat":37.380428309999999,"lng":-121.98777008},{"lat":37.380435939999998,"lng":-121.98686981},{"lat":37.380435939999998,"lng":-121.98672485},{"lat":37.380443569999997,"lng":-121.98531342},{"lat":37.380443569999997,"lng":-121.98416901},{"lat":37.380443569999997,"lng":-121.98374176},{"lat":37.380435939999998,"lng":-121.98361206},{"lat":37.380363459999998,"lng":-121.98247528},{"lat":37.380363459999998,"lng":-121.98232269},{"lat":37.380386350000002,"lng":-121.98187256},{"lat":37.380435939999998,"lng":-121.98143768},{"lat":37.380489349999998,"lng":-121.97977448},{"lat":37.380485530000001,"lng":-121.97949982},{"lat":37.380489349999998,"lng":-121.97785186999999},{"lat":37.38049316,"lng":-121.97772980000001},{"lat":37.38049316,"lng":-121.9776535},{"lat":37.380561829999998,"lng":-121.9776535},{"lat":37.38061905,"lng":-121.97763062},{"lat":37.380771639999999,"lng":-121.97763062},{"lat":37.3814888,"lng":-121.97763062},{"lat":37.381694789999997,"lng":-121.97763824},{"lat":37.3818512,"lng":-121.97763824},{"lat":37.382137299999997,"lng":-121.97763824},{"lat":37.38235092,"lng":-121.97763824},{"lat":37.382396700000001,"lng":-121.97763824},{"lat":37.382472989999997,"lng":-121.97763062},{"lat":37.382907869999997,"lng":-121.97763062},{"lat":37.382976530000001,"lng":-121.97763062},{"lat":37.383064269999998,"lng":-121.97762299},{"lat":37.383132930000002,"lng":-121.97762299},{"lat":37.383178710000003,"lng":-121.97761536},{"lat":37.383243559999997,"lng":-121.97760773},{"lat":37.383316039999997,"lng":-121.9776001},{"lat":37.383388519999997,"lng":-121.97758484000001},{"lat":37.383453369999998,"lng":-121.97756957999999},{"lat":37.383525849999998,"lng":-121.97755432},{"lat":37.383571619999998,"lng":-121.97754669},{"lat":37.383739470000002,"lng":-121.97750854},{"lat":37.383865360000001,"lng":-121.97746277},{"lat":37.38399124,"lng":-121.97742461999999},{"lat":37.384128570000001,"lng":-121.97737884999999},{"lat":37.384231569999997,"lng":-121.9773407},{"lat":37.38435364,"lng":-121.97728729000001},{"lat":37.38447189,"lng":-121.97724152000001},{"lat":37.384578699999999,"lng":-121.97719574},{"lat":37.384708400000001,"lng":-121.97714233000001},{"lat":37.384963990000003,"lng":-121.97704315},{"lat":37.385070800000001,"lng":-121.97699738},{"lat":37.385162350000002,"lng":-121.97695923000001},{"lat":37.385292049999997,"lng":-121.97690582},{"lat":37.385349269999999,"lng":-121.97688293},{"lat":37.385494229999999,"lng":-121.97682953},{"lat":37.385509489999997,"lng":-121.9768219},{"lat":37.385589600000003,"lng":-121.97679137999999},{"lat":37.385780330000003,"lng":-121.97671509},{"lat":37.385879520000003,"lng":-121.97667694},{"lat":37.385982509999998,"lng":-121.97663116},{"lat":37.386035919999998,"lng":-121.97660827999999},{"lat":37.386096950000002,"lng":-121.97658539},{"lat":37.386276250000002,"lng":-121.97651672000001},{"lat":37.386432650000003,"lng":-121.97645568999999},{"lat":37.386684420000002,"lng":-121.97634125},{"lat":37.386829380000002,"lng":-121.97628784},{"lat":37.387050629999997,"lng":-121.97619629},{"lat":37.387378689999998,"lng":-121.97606659},{"lat":37.387657169999997,"lng":-121.97596741},{"lat":37.387760159999999,"lng":-121.97592926},{"lat":37.387882230000002,"lng":-121.97589111000001},{"lat":37.38802338,"lng":-121.9758606},{"lat":37.388156889999998,"lng":-121.97583007999999},{"lat":37.388324740000002,"lng":-121.97579956},{"lat":37.388618469999997,"lng":-121.97576141},{"lat":37.388702389999999,"lng":-121.97575378000001},{"lat":37.389106750000003,"lng":-121.97573853},{"lat":37.389232640000003,"lng":-121.97573853},{"lat":37.389289859999998,"lng":-121.97573853},{"lat":37.389453889999999,"lng":-121.97574615000001},{"lat":37.38961029,"lng":-121.97574615000001},{"lat":37.389801030000001,"lng":-121.97576141},{"lat":37.389877319999997,"lng":-121.97576141},{"lat":37.390129090000002,"lng":-121.97579193},{"lat":37.39036179,"lng":-121.97582245},{"lat":37.39040756,"lng":-121.97583007999999},{"lat":37.390544890000001,"lng":-121.97585297000001},{"lat":37.390743260000001,"lng":-121.97588347999999},{"lat":37.390956879999997,"lng":-121.97594452},{"lat":37.39110565,"lng":-121.97598266999999},{"lat":37.39123154,"lng":-121.97602080999999},{"lat":37.391521449999999,"lng":-121.97611237},{"lat":37.391700739999997,"lng":-121.97617339999999},{"lat":37.39190292,"lng":-121.97624969},{"lat":37.392066960000001,"lng":-121.97632599000001},{"lat":37.392082209999998,"lng":-121.97633362000001},{"lat":37.392234799999997,"lng":-121.97640228},{"lat":37.392467500000002,"lng":-121.97651672000001},{"lat":37.392536159999999,"lng":-121.97655487},{"lat":37.392620090000001,"lng":-121.97658539},{"lat":37.392562869999999,"lng":-121.9768219},{"lat":37.392505649999997,"lng":-121.97701263},{"lat":37.392471309999998,"lng":-121.97711945},{"lat":37.39241028,"lng":-121.97730255},{"lat":37.392360689999997,"lng":-121.97743988000001},{"lat":37.392269130000003,"lng":-121.97771453999999},{"lat":37.392219539999999,"lng":-121.97786713000001},{"lat":37.392051700000003,"lng":-121.97843933},{"lat":37.391956329999999,"lng":-121.97875977},{"lat":37.391910549999999,"lng":-121.97891998},{"lat":37.391891479999998,"lng":-121.97898102000001},{"lat":37.39185715,"lng":-121.97907257},{"lat":37.391780850000004,"lng":-121.97925567999999},{"lat":37.39175797,"lng":-121.97930907999999},{"lat":37.391750340000002,"lng":-121.97937012},{"lat":37.391754149999997,"lng":-121.97943878},{"lat":37.391773219999997,"lng":-121.97949219},{"lat":37.391807559999997,"lng":-121.97953796},{"lat":37.391860960000002,"lng":-121.97957611},{"lat":37.391925809999996,"lng":-121.97965240000001},{"lat":37.391941070000001,"lng":-121.97966766},{"lat":37.391967770000001,"lng":-121.97970581},{"lat":37.391994480000001,"lng":-121.97976685},{"lat":37.392009739999999,"lng":-121.97983551},{"lat":37.391994480000001,"lng":-121.97990417},{"lat":37.391960140000002,"lng":-121.97994232000001},{"lat":37.391872409999998,"lng":-121.98001862},{"lat":37.391761780000003,"lng":-121.98005676},{"lat":37.391605380000001,"lng":-121.98005676},{"lat":37.391445160000004,"lng":-121.98001862},{"lat":37.391326900000003,"lng":-121.97992705999999},{"lat":37.391216280000002,"lng":-121.97982788},{"lat":37.391132349999999,"lng":-121.97969055},{"lat":37.391090390000002,"lng":-121.97959136999999},{"lat":37.391082760000003,"lng":-121.97953796},{"lat":37.391082760000003,"lng":-121.97946167000001},{"lat":37.39110565,"lng":-121.97940063},{"lat":37.391151430000001,"lng":-121.9793396},{"lat":37.391174319999998,"lng":-121.97932434000001},{"lat":37.391216280000002,"lng":-121.97930907999999},{"lat":37.391273499999997,"lng":-121.97930144999999},{"lat":37.39134979,"lng":-121.97930907999999},{"lat":37.391475679999999,"lng":-121.97930907999999},{"lat":37.391521449999999,"lng":-121.97929382},{"lat":37.391559600000001,"lng":-121.97927094000001},{"lat":37.3915863,"lng":-121.97923279},{"lat":37.391624450000002,"lng":-121.97917175000001},{"lat":37.391696930000002,"lng":-121.97900391},{"lat":37.39173126,"lng":-121.97890472},{"lat":37.391750340000002,"lng":-121.97885132},{"lat":37.39180374,"lng":-121.97868347000001},{"lat":37.391918179999998,"lng":-121.97831726},{"lat":37.392070769999997,"lng":-121.97779083},{"lat":37.39212036,"lng":-121.97763062},{"lat":37.39221191,"lng":-121.97737121999999},{"lat":37.392261509999997,"lng":-121.97721863},{"lat":37.392322540000002,"lng":-121.97705078},{"lat":37.39235687,"lng":-121.97695160000001},{"lat":37.392402650000001,"lng":-121.97674560999999},{"lat":37.392467500000002,"lng":-121.97651672000001},{"lat":37.392539980000002,"lng":-121.97618103000001},{"lat":37.392543789999998,"lng":-121.97615814},{"lat":37.392589569999998,"lng":-121.97576141},{"lat":37.392581939999999,"lng":-121.97553253},{"lat":37.392574310000001,"lng":-121.97536469000001},{"lat":37.392520900000001,"lng":-121.97496796},{"lat":37.392463679999999,"lng":-121.97473144999999},{"lat":37.392398829999998,"lng":-121.97451782},{"lat":37.39235687,"lng":-121.97440338},{"lat":37.392295840000003,"lng":-121.97427368},{"lat":37.392257690000001,"lng":-121.97421265},{"lat":37.392196660000003,"lng":-121.97409820999999},{"lat":37.39212036,"lng":-121.97398376},{"lat":37.39209366,"lng":-121.97393799},{"lat":37.392013550000001,"lng":-121.97383881},{"lat":37.391925809999996,"lng":-121.97371674},{"lat":37.391807559999997,"lng":-121.97359467},{"lat":37.390647889999997,"lng":-121.97250366},{"lat":37.390171049999999,"lng":-121.97206878999999},{"lat":37.389930730000003,"lng":-121.97183228},{"lat":37.389774320000001,"lng":-121.97165680000001},{"lat":37.389667510000002,"lng":-121.97150421000001},{"lat":37.389427189999999,"lng":-121.97109985},{"lat":37.389316559999997,"lng":-121.97087860000001},{"lat":37.389217379999998,"lng":-121.97063446},{"lat":37.389087680000003,"lng":-121.97019958},{"lat":37.389049530000001,"lng":-121.97000122},{"lat":37.388992309999999,"lng":-121.96951294},{"lat":37.389064789999999,"lng":-121.96950531},{"lat":37.38912964,"lng":-121.96950531},{"lat":37.389698029999998,"lng":-121.96944427},{"lat":37.389778139999997,"lng":-121.96938324},{"lat":37.389881129999999,"lng":-121.96936035},{"lat":37.390033719999998,"lng":-121.96932219999999},{"lat":37.390102390000003,"lng":-121.96928406000001},{"lat":37.390239719999997,"lng":-121.96917725},{"lat":37.39038086,"lng":-121.96900177000001},{"lat":37.390426640000001,"lng":-121.96889496},{"lat":37.390476229999997,"lng":-121.96878052},{"lat":37.390579219999999,"lng":-121.96857452},{"lat":37.390636440000002,"lng":-121.96852875},{"lat":37.390682220000002,"lng":-121.96843719},{"lat":37.390846250000003,"lng":-121.9681015},{"lat":37.39105988,"lng":-121.96767426},{"lat":37.391284939999998,"lng":-121.96716309},{"lat":37.39173126,"lng":-121.96612549},{"lat":37.392063139999998,"lng":-121.96535492},{"lat":37.392498019999998,"lng":-121.96433258},{"lat":37.392570499999998,"lng":-121.96417236000001},{"lat":37.393013000000003,"lng":-121.96310425},{"lat":37.393051149999998,"lng":-121.96301269999999},{"lat":37.393066410000003,"lng":-121.96297455},{"lat":37.393215179999999,"lng":-121.96263123},{"lat":37.393249509999997,"lng":-121.9625473},{"lat":37.393486019999997,"lng":-121.96200562},{"lat":37.39354324,"lng":-121.96186066},{"lat":37.393772130000002,"lng":-121.96133423000001},{"lat":37.393917080000001,"lng":-121.96099854000001},{"lat":37.394237519999997,"lng":-121.96026611000001},{"lat":37.394359590000001,"lng":-121.95998383},{"lat":37.394557949999999,"lng":-121.9595108},{"lat":37.39472198,"lng":-121.95913696},{"lat":37.394828799999999,"lng":-121.95888519},{"lat":37.394908909999998,"lng":-121.95870972},{"lat":37.39496613,"lng":-121.95854187},{"lat":37.395008089999997,"lng":-121.95843506},{"lat":37.395000459999999,"lng":-121.95833588000001},{"lat":37.395408629999999,"lng":-121.95722961},{"lat":37.395549770000002,"lng":-121.95684052},{"lat":37.396068569999997,"lng":-121.95561218},{"lat":37.396095279999997,"lng":-121.95555878},{"lat":37.396125789999999,"lng":-121.95546722},{"lat":37.396331789999998,"lng":-121.95490264999999},{"lat":37.396419530000003,"lng":-121.95453644},{"lat":37.396457669999997,"lng":-121.954216},{"lat":37.39646149,"lng":-121.95387268},{"lat":37.396450039999998,"lng":-121.95351410000001},{"lat":37.396419530000003,"lng":-121.95316314999999},{"lat":37.396381380000001,"lng":-121.95298767},{"lat":37.396327970000002,"lng":-121.95278931},{"lat":37.396221160000003,"lng":-121.9524765},{"lat":37.396148680000003,"lng":-121.95227814},{"lat":37.396018980000001,"lng":-121.95202637},{"lat":37.395668030000003,"lng":-121.95144653},{"lat":37.395393370000001,"lng":-121.95101929},{"lat":37.395355219999999,"lng":-121.95095062},{"lat":37.395332340000003,"lng":-121.95090485},{"lat":37.394962309999997,"lng":-121.9503479},{"lat":37.394908909999998,"lng":-121.95026398},{"lat":37.394691469999998,"lng":-121.94983673},{"lat":37.394569400000002,"lng":-121.9495163},{"lat":37.394565579999998,"lng":-121.94947052000001},{"lat":37.39440536,"lng":-121.94901276},{"lat":37.39424133,"lng":-121.94857025},{"lat":37.394119259999997,"lng":-121.94821930000001},{"lat":37.3940506,"lng":-121.94807434000001},{"lat":37.39399719,"lng":-121.94798279},{"lat":37.393909450000002,"lng":-121.94783783},{"lat":37.393825530000001,"lng":-121.94775391},{"lat":37.393680570000001,"lng":-121.94761658},{"lat":37.393379209999999,"lng":-121.94735718},{"lat":37.39325333,"lng":-121.94725037000001},{"lat":37.393218990000001,"lng":-121.94717407},{"lat":37.393161769999999,"lng":-121.94714355000001},{"lat":37.393077849999997,"lng":-121.94709777999999},{"lat":37.393005369999997,"lng":-121.94704437},{"lat":37.392917629999999,"lng":-121.94698334},{"lat":37.393440249999998,"lng":-121.94579315},{"lat":37.393684389999997,"lng":-121.94523621},{"lat":37.394149779999999,"lng":-121.94421387},{"lat":37.394412989999999,"lng":-121.94361115},{"lat":37.394718169999997,"lng":-121.94291687},{"lat":37.394771579999997,"lng":-121.94278717},{"lat":37.395107269999997,"lng":-121.94194031000001},{"lat":37.395286560000002,"lng":-121.94148254},{"lat":37.395332340000003,"lng":-121.94135283999999},{"lat":37.395359040000002,"lng":-121.94127655},{"lat":37.395423889999996,"lng":-121.94108582},{"lat":37.395484920000001,"lng":-121.94091034},{"lat":37.395526889999999,"lng":-121.9407959},{"lat":37.395671839999999,"lng":-121.94039917000001},{"lat":37.396331789999998,"lng":-121.93859863},{"lat":37.396938319999997,"lng":-121.93704987},{"lat":37.397094729999999,"lng":-121.93665314},{"lat":37.397117610000002,"lng":-121.93635559000001},{"lat":37.397121429999999,"lng":-121.9362793},{"lat":37.3971138,"lng":-121.93621063000001},{"lat":37.397083279999997,"lng":-121.93613434},{"lat":37.397052760000001,"lng":-121.93608856},{"lat":37.396984099999997,"lng":-121.93600463999999},{"lat":37.396041869999998,"lng":-121.93531036},{"lat":37.395103450000001,"lng":-121.93462372},{"lat":37.394950870000002,"lng":-121.93450928},{"lat":37.394870760000003,"lng":-121.93445586999999},{"lat":37.394786830000001,"lng":-121.93439484},{"lat":37.393337250000002,"lng":-121.93334960999999},{"lat":37.393192290000002,"lng":-121.9332428},{"lat":37.393020630000002,"lng":-121.93312073},{"lat":37.392784120000002,"lng":-121.93295288},{"lat":37.392200469999999,"lng":-121.93253326},{"lat":37.391292569999997,"lng":-121.93185425},{"lat":37.391227720000003,"lng":-121.93180847000001},{"lat":37.391136170000003,"lng":-121.93173981},{"lat":37.39117813,"lng":-121.93164824999999},{"lat":37.391239169999999,"lng":-121.93151093},{"lat":37.391296390000001,"lng":-121.93139648},{"lat":37.391357419999999,"lng":-121.93125916},{"lat":37.391620639999999,"lng":-121.93069457999999},{"lat":37.391704560000001,"lng":-121.93053436},{"lat":37.392017359999997,"lng":-121.92993164000001},{"lat":37.392147059999999,"lng":-121.92974091000001},{"lat":37.392158510000002,"lng":-121.92972564999999},{"lat":37.39226532,"lng":-121.92958831999999},{"lat":37.3923378,"lng":-121.92949677},{"lat":37.392406459999997,"lng":-121.92942047},{"lat":37.392463679999999,"lng":-121.92934418},{"lat":37.392520900000001,"lng":-121.92928314},{"lat":37.392574310000001,"lng":-121.92922974},{"lat":37.392612460000002,"lng":-121.92916870000001},{"lat":37.392646790000001,"lng":-121.92910766999999},{"lat":37.392723080000003,"lng":-121.92899323},{"lat":37.392780299999998,"lng":-121.92887878000001},{"lat":37.392868040000003,"lng":-121.92875671},{"lat":37.392929080000002,"lng":-121.92865753},{"lat":37.393001560000002,"lng":-121.92856598},{"lat":37.393093110000002,"lng":-121.9284668},{"lat":37.39342499,"lng":-121.92817688},{"lat":37.393482210000002,"lng":-121.92812347},{"lat":37.393531799999998,"lng":-121.9280777},{"lat":37.394264219999997,"lng":-121.92725372},{"lat":37.395080569999998,"lng":-121.92634583},{"lat":37.395893100000002,"lng":-121.92546082},{"lat":37.396671300000001,"lng":-121.92457580999999},{"lat":37.396728520000003,"lng":-121.92446136},{"lat":37.396751399999999,"lng":-121.92440796},{"lat":37.396759029999998,"lng":-121.92434692},{"lat":37.396755220000003,"lng":-121.92430115000001},{"lat":37.39674377,"lng":-121.92423248},{"lat":37.396709440000002,"lng":-121.92417145},{"lat":37.396648409999997,"lng":-121.9240799},{"lat":37.396610260000003,"lng":-121.92401886},{"lat":37.396499630000001,"lng":-121.92383574999999},{"lat":37.395145419999999,"lng":-121.92268371999999},{"lat":37.394569400000002,"lng":-121.92221069},{"lat":37.394203189999999,"lng":-121.92185974},{"lat":37.394020079999997,"lng":-121.92165375},{"lat":37.39387894,"lng":-121.92147064},{"lat":37.393745420000002,"lng":-121.92126465},{"lat":37.393650049999998,"lng":-121.92106628000001},{"lat":37.393604279999998,"lng":-121.92095947},{"lat":37.393520359999997,"lng":-121.92073822},{"lat":37.393428800000002,"lng":-121.92041016},{"lat":37.39337158,"lng":-121.92012024},{"lat":37.393367769999998,"lng":-121.92009735000001},{"lat":37.393333439999999,"lng":-121.91990662000001},{"lat":37.393318180000001,"lng":-121.91963959},{"lat":37.393318180000001,"lng":-121.91947174000001},{"lat":37.393337250000002,"lng":-121.91921997},{"lat":37.393360139999999,"lng":-121.91900635},{"lat":37.393402100000003,"lng":-121.91876984},{"lat":37.393455510000003,"lng":-121.91857147},{"lat":37.393486019999997,"lng":-121.91847229},{"lat":37.393527980000002,"lng":-121.91837311},{"lat":37.393623349999999,"lng":-121.91812134},{"lat":37.393703459999998,"lng":-121.91794586},{"lat":37.39380646,"lng":-121.91775513},{"lat":37.393890380000002,"lng":-121.9176178},{"lat":37.394012449999998,"lng":-121.91747284},{"lat":37.39416885,"lng":-121.91729736000001},{"lat":37.394645689999997,"lng":-121.91673279},{"lat":37.39479446,"lng":-121.91656494},{"lat":37.394943240000003,"lng":-121.91638947},{"lat":37.395095830000002,"lng":-121.91620636},{"lat":37.395439150000001,"lng":-121.91581726},{"lat":37.39573669,"lng":-121.91548157},{"lat":37.395786289999997,"lng":-121.91542053000001},{"lat":37.396030430000003,"lng":-121.9151535},{"lat":37.396587369999999,"lng":-121.91449738},{"lat":37.396900180000003,"lng":-121.91413116},{"lat":37.397144320000002,"lng":-121.91384888},{"lat":37.397701259999998,"lng":-121.91319274999999},{"lat":37.397964479999999,"lng":-121.91288757},{"lat":37.397987370000003,"lng":-121.91286469000001},{"lat":37.398006440000003,"lng":-121.9128418},{"lat":37.398071289999997,"lng":-121.91277313000001},{"lat":37.398189539999997,"lng":-121.91264343},{"lat":37.398372649999999,"lng":-121.91242981000001},{"lat":37.399009700000001,"lng":-121.91171265},{"lat":37.399196619999998,"lng":-121.91150665000001},{"lat":37.400009160000003,"lng":-121.91060638},{"lat":37.400997160000003,"lng":-121.90946198},{"lat":37.40103912,"lng":-121.9094162},{"lat":37.401119229999999,"lng":-121.90932465},{"lat":37.401153559999997,"lng":-121.90928649999999},{"lat":37.40118408,"lng":-121.90924835},{"lat":37.401214600000003,"lng":-121.90921783},{"lat":37.401370999999997,"lng":-121.90904236},{"lat":37.401481629999999,"lng":-121.90891266},{"lat":37.401531220000003,"lng":-121.90885925000001},{"lat":37.401653289999999,"lng":-121.90872192},{"lat":37.401679989999998,"lng":-121.90869141},{"lat":37.401710510000001,"lng":-121.90865325999999},{"lat":37.401748660000003,"lng":-121.90860748},{"lat":37.401782990000001,"lng":-121.90856934},{"lat":37.40190887,"lng":-121.90842438},{"lat":37.402000430000001,"lng":-121.90831756999999},{"lat":37.402187349999998,"lng":-121.90810394},{"lat":37.402523039999998,"lng":-121.90771484},{"lat":37.403003689999998,"lng":-121.90718842},{"lat":37.403400419999997,"lng":-121.90672302},{"lat":37.40366745,"lng":-121.90640259},{"lat":37.403789519999997,"lng":-121.90624237},{"lat":37.403961180000003,"lng":-121.90600585999999},{"lat":37.404006959999997,"lng":-121.90592194},{"lat":37.404048920000001,"lng":-121.90584564},{"lat":37.404109949999999,"lng":-121.90570830999999},{"lat":37.404132840000003,"lng":-121.90566253999999},{"lat":37.404193880000001,"lng":-121.90550995},{"lat":37.404243469999997,"lng":-121.90536499},{"lat":37.40424728,"lng":-121.9053421},{"lat":37.404266360000001,"lng":-121.90527344},{"lat":37.404277800000003,"lng":-121.90522003},{"lat":37.404304500000002,"lng":-121.90508269999999},{"lat":37.404327389999999,"lng":-121.90493011},{"lat":37.404331210000002,"lng":-121.90489959999999},{"lat":37.404338840000001,"lng":-121.90483856},{"lat":37.40434647,"lng":-121.9046402},{"lat":37.404342649999997,"lng":-121.90439606},{"lat":37.404308319999998,"lng":-121.90385437},{"lat":37.404308319999998,"lng":-121.90337372},{"lat":37.404281619999999,"lng":-121.90303802},{"lat":37.404277800000003,"lng":-121.90296173},{"lat":37.404270169999997,"lng":-121.90287017999999},{"lat":37.404254909999999,"lng":-121.90273285000001},{"lat":37.404216769999998,"lng":-121.90229033999999},{"lat":37.404071809999998,"lng":-121.90068817},{"lat":37.404064179999999,"lng":-121.90058899},{"lat":37.404052729999997,"lng":-121.90044403},{"lat":37.404045099999998,"lng":-121.90038300000001},{"lat":37.403976440000001,"lng":-121.89948273},{"lat":37.403961180000003,"lng":-121.89907837},{"lat":37.403953549999997,"lng":-121.89894104},{"lat":37.40400314,"lng":-121.89832306},{"lat":37.404052729999997,"lng":-121.89795685},{"lat":37.404087070000003,"lng":-121.89783478},{"lat":37.404117579999998,"lng":-121.89771270999999},{"lat":37.404228209999999,"lng":-121.89740753},{"lat":37.404304500000002,"lng":-121.89724731},{"lat":37.404483800000001,"lng":-121.89687347},{"lat":37.404552459999998,"lng":-121.8967514},{"lat":37.404617309999999,"lng":-121.89663696},{"lat":37.404750819999997,"lng":-121.89644623},{"lat":37.404922489999997,"lng":-121.89625549},{"lat":37.40509033,"lng":-121.89608765},{"lat":37.405376429999997,"lng":-121.89586638999999},{"lat":37.405612949999998,"lng":-121.89569855000001},{"lat":37.405822749999999,"lng":-121.89559937},{"lat":37.405948639999998,"lng":-121.89555359000001},{"lat":37.40605927,"lng":-121.89551544},{"lat":37.406246189999997,"lng":-121.89546967},{"lat":37.406307220000002,"lng":-121.89546204},{"lat":37.40649414,"lng":-121.89543915},{"lat":37.406665799999999,"lng":-121.89541626},{"lat":37.406795500000001,"lng":-121.89540100000001},{"lat":37.406997680000003,"lng":-121.89537811},{"lat":37.40719223,"lng":-121.89535522},{"lat":37.407485960000002,"lng":-121.89530945},{"lat":37.408557889999997,"lng":-121.89517212},{"lat":37.408634190000001,"lng":-121.89516449},{"lat":37.408744810000002,"lng":-121.8951416},{"lat":37.40887833,"lng":-121.8950882},{"lat":37.40926743,"lng":-121.8948822},{"lat":37.409393309999999,"lng":-121.89480591},{"lat":37.409481049999997,"lng":-121.89473724},{"lat":37.409511569999999,"lng":-121.89471435999999},{"lat":37.409709929999998,"lng":-121.89453888},{"lat":37.40991211,"lng":-121.89421844},{"lat":37.40993881,"lng":-121.89414978000001},{"lat":37.409973139999998,"lng":-121.89406586},{"lat":37.409988400000003,"lng":-121.89395905000001},{"lat":37.409992219999999,"lng":-121.89385222999999},{"lat":37.409988400000003,"lng":-121.89374542},{"lat":37.409198760000002,"lng":-121.89215851},{"lat":37.409164429999997,"lng":-121.89161682},{"lat":37.409442900000002,"lng":-121.89149475000001},{"lat":37.409736629999998,"lng":-121.89138031},{"lat":37.409900669999999,"lng":-121.89129638999999},{"lat":37.410060880000003,"lng":-121.8914032},{"lat":37.410255429999999,"lng":-121.89151001},{"lat":37.410396579999997,"lng":-121.8915863},{"lat":37.410541530000003,"lng":-121.89167786},{"lat":37.4106369,"lng":-121.89173889},{"lat":37.41056442,"lng":-121.89192963000001},{"lat":37.410495760000003,"lng":-121.89209747},{"lat":37.410324099999997,"lng":-121.89199829}]},"WB":{"101381":[{"lat":37.410324099999997,"lng":-121.89199829},{"lat":37.41013718,"lng":-121.89190674},{"lat":37.409950260000002,"lng":-121.89181519},{"lat":37.409774779999999,"lng":-121.89170074},{"lat":37.409728999999999,"lng":-121.89165497},{"lat":37.409442900000002,"lng":-121.89149475000001},{"lat":37.409164429999997,"lng":-121.89161682},{"lat":37.410015110000003,"lng":-121.89343262},{"lat":37.410243989999998,"lng":-121.89389801},{"lat":37.410289759999998,"lng":-121.89399718999999},{"lat":37.410327909999999,"lng":-121.89408112},{"lat":37.41028214,"lng":-121.89414978000001},{"lat":37.410236359999999,"lng":-121.89421844},{"lat":37.41013718,"lng":-121.89434814000001},{"lat":37.409843440000003,"lng":-121.89466858},{"lat":37.409801479999999,"lng":-121.89470673},{"lat":37.409580230000003,"lng":-121.89491271999999},{"lat":37.409374239999998,"lng":-121.89505767999999},{"lat":37.409278870000001,"lng":-121.89511108000001},{"lat":37.409034730000002,"lng":-121.89522552},{"lat":37.408813479999999,"lng":-121.89531708},{"lat":37.408672330000002,"lng":-121.89534759999999},{"lat":37.408603669999998,"lng":-121.89536285},{"lat":37.40750122,"lng":-121.89551544},{"lat":37.407207489999998,"lng":-121.89555359000001},{"lat":37.407009119999998,"lng":-121.89557648},{"lat":37.406917569999997,"lng":-121.89559174},{"lat":37.406810759999999,"lng":-121.89559937},{"lat":37.406669620000002,"lng":-121.89562225},{"lat":37.406505580000001,"lng":-121.89564514},{"lat":37.406318659999997,"lng":-121.89566803},{"lat":37.406246189999997,"lng":-121.89567565999999},{"lat":37.406051640000001,"lng":-121.89574432000001},{"lat":37.405918120000003,"lng":-121.8957901},{"lat":37.40569687,"lng":-121.89589691},{"lat":37.405460359999999,"lng":-121.89601897999999},{"lat":37.405246730000002,"lng":-121.89617920000001},{"lat":37.405067440000003,"lng":-121.89633942},{"lat":37.404907229999999,"lng":-121.89652252},{"lat":37.404762269999999,"lng":-121.89670563},{"lat":37.404724119999997,"lng":-121.89676666},{"lat":37.404644009999998,"lng":-121.89690399},{"lat":37.404521940000002,"lng":-121.89713286999999},{"lat":37.40441895,"lng":-121.89736938},{"lat":37.404388429999997,"lng":-121.89743042000001},{"lat":37.404281619999999,"lng":-121.89778137},{"lat":37.404243469999997,"lng":-121.89790343999999},{"lat":37.404228209999999,"lng":-121.89794922},{"lat":37.404144289999998,"lng":-121.89834595000001},{"lat":37.404121400000001,"lng":-121.89858246},{"lat":37.404109949999999,"lng":-121.89892578},{"lat":37.404113770000002,"lng":-121.899086},{"lat":37.404121400000001,"lng":-121.89935303},{"lat":37.404190059999998,"lng":-121.90042114000001},{"lat":37.404193880000001,"lng":-121.90045166},{"lat":37.404212950000002,"lng":-121.90059662},{"lat":37.404216769999998,"lng":-121.90069579999999},{"lat":37.40422058,"lng":-121.90074921},{"lat":37.404369350000003,"lng":-121.90240479000001},{"lat":37.404399869999999,"lng":-121.90273285000001},{"lat":37.404411320000001,"lng":-121.90287017999999},{"lat":37.40441895,"lng":-121.90296173},{"lat":37.404411320000001,"lng":-121.90312958},{"lat":37.404434199999997,"lng":-121.90341949},{"lat":37.404476170000002,"lng":-121.90400696},{"lat":37.404491419999999,"lng":-121.90430449999999},{"lat":37.404499049999998,"lng":-121.9045105},{"lat":37.404491419999999,"lng":-121.9046402},{"lat":37.404491419999999,"lng":-121.90467834},{"lat":37.404479979999998,"lng":-121.90484619},{"lat":37.404476170000002,"lng":-121.90488434},{"lat":37.404457090000001,"lng":-121.90505219000001},{"lat":37.404441830000003,"lng":-121.90512085},{"lat":37.404430390000002,"lng":-121.90519714},{"lat":37.404403690000002,"lng":-121.90532684},{"lat":37.404388429999997,"lng":-121.90538788000001},{"lat":37.40437317,"lng":-121.90544128000001},{"lat":37.404369350000003,"lng":-121.90544891},{"lat":37.404350280000003,"lng":-121.90551757999999},{"lat":37.404323580000003,"lng":-121.90558624000001},{"lat":37.404258730000002,"lng":-121.90573120000001},{"lat":37.404239650000001,"lng":-121.90576935},{"lat":37.404205320000003,"lng":-121.90585326999999},{"lat":37.404159550000003,"lng":-121.90593719},{"lat":37.404140470000002,"lng":-121.90597534},{"lat":37.404109949999999,"lng":-121.90602875},{"lat":37.40398407,"lng":-121.90621948},{"lat":37.403976440000001,"lng":-121.90622711},{"lat":37.403861999999997,"lng":-121.90637207},{"lat":37.403816220000003,"lng":-121.90643310999999},{"lat":37.403133390000001,"lng":-121.90723419},{"lat":37.402992249999997,"lng":-121.90739440999999},{"lat":37.402553560000001,"lng":-121.90789032000001},{"lat":37.402164460000002,"lng":-121.90834045},{"lat":37.402061459999999,"lng":-121.90846252},{"lat":37.40195465,"lng":-121.90858459},{"lat":37.401836400000001,"lng":-121.90872192},{"lat":37.401683810000002,"lng":-121.9088974},{"lat":37.401634219999998,"lng":-121.90895080999999},{"lat":37.401550290000003,"lng":-121.90908813},{"lat":37.401523589999996,"lng":-121.90908051},{"lat":37.401370999999997,"lng":-121.90925598},{"lat":37.401348110000001,"lng":-121.90928649999999},{"lat":37.401321410000001,"lng":-121.90930939},{"lat":37.401264189999999,"lng":-121.90937805},{"lat":37.40123749,"lng":-121.90940857},{"lat":37.401176450000001,"lng":-121.90948486000001},{"lat":37.401153559999997,"lng":-121.90950775},{"lat":37.40092087,"lng":-121.90977478000001},{"lat":37.400520319999998,"lng":-121.91023254},{"lat":37.400318149999997,"lng":-121.91046906},{"lat":37.400051120000001,"lng":-121.91077423},{"lat":37.399337770000002,"lng":-121.91164397999999},{"lat":37.399154660000001,"lng":-121.9118576},{"lat":37.399036410000001,"lng":-121.91199493000001},{"lat":37.398502350000001,"lng":-121.91260529},{"lat":37.398376460000001,"lng":-121.91275023999999},{"lat":37.398315429999997,"lng":-121.91282654},{"lat":37.398197170000003,"lng":-121.91296387},{"lat":37.398105620000003,"lng":-121.91306305000001},{"lat":37.39783096,"lng":-121.91339111000001},{"lat":37.397617339999996,"lng":-121.91365051},{"lat":37.39730453,"lng":-121.91400145999999},{"lat":37.39725876,"lng":-121.91405487},{"lat":37.3970871,"lng":-121.91424560999999},{"lat":37.397079470000001,"lng":-121.91425323},{"lat":37.396701810000003,"lng":-121.91466522},{"lat":37.396648409999997,"lng":-121.91472625999999},{"lat":37.396209720000002,"lng":-121.91518402},{"lat":37.396087649999998,"lng":-121.91535186999999},{"lat":37.395961759999999,"lng":-121.91551208},{"lat":37.395614620000003,"lng":-121.91593933},{"lat":37.395236969999999,"lng":-121.91638184},{"lat":37.395092009999999,"lng":-121.91655731},{"lat":37.39493942,"lng":-121.91674805},{"lat":37.394786830000001,"lng":-121.91692352},{"lat":37.394412989999999,"lng":-121.91735077},{"lat":37.394283289999997,"lng":-121.91750336},{"lat":37.394126890000003,"lng":-121.91770935},{"lat":37.393966669999998,"lng":-121.91797638},{"lat":37.393856049999997,"lng":-121.91817474},{"lat":37.393714899999999,"lng":-121.91854094999999},{"lat":37.3936615,"lng":-121.91869354000001},{"lat":37.393600460000002,"lng":-121.91896057},{"lat":37.393562320000001,"lng":-121.91925811999999},{"lat":37.39354324,"lng":-121.91949463},{"lat":37.393539429999997,"lng":-121.91970825},{"lat":37.393554690000002,"lng":-121.91996765},{"lat":37.393566130000004,"lng":-121.92005157},{"lat":37.39358902,"lng":-121.92021179},{"lat":37.393623349999999,"lng":-121.92038727000001},{"lat":37.393653870000001,"lng":-121.92049408},{"lat":37.393737790000003,"lng":-121.92075348},{"lat":37.393844600000001,"lng":-121.92102051000001},{"lat":37.393959049999999,"lng":-121.92124176},{"lat":37.394145969999997,"lng":-121.92151642},{"lat":37.394260410000001,"lng":-121.92163849000001},{"lat":37.394393919999999,"lng":-121.92179108000001},{"lat":37.394611359999999,"lng":-121.92199707},{"lat":37.395614620000003,"lng":-121.92284393},{"lat":37.396621699999997,"lng":-121.92371368000001},{"lat":37.397083279999997,"lng":-121.92411041},{"lat":37.39715958,"lng":-121.92417908},{"lat":37.397228239999997,"lng":-121.92424011},{"lat":37.397121429999999,"lng":-121.92436218},{"lat":37.396816250000001,"lng":-121.92469025},{"lat":37.396030430000003,"lng":-121.92556},{"lat":37.395191189999998,"lng":-121.92646027000001},{"lat":37.394798280000003,"lng":-121.92687988},{"lat":37.394371030000002,"lng":-121.92736053},{"lat":37.393657679999997,"lng":-121.92816162},{"lat":37.393604279999998,"lng":-121.92820740000001},{"lat":37.393535610000001,"lng":-121.9282608},{"lat":37.393150329999997,"lng":-121.92854309000001},{"lat":37.393112180000003,"lng":-121.92858124},{"lat":37.393066410000003,"lng":-121.92863464},{"lat":37.393024439999998,"lng":-121.92869568},{"lat":37.392986299999997,"lng":-121.92874908},{"lat":37.392921450000003,"lng":-121.9288559},{"lat":37.392753599999999,"lng":-121.92916870000001},{"lat":37.3927269,"lng":-121.92922211},{"lat":37.3927002,"lng":-121.92927551},{"lat":37.392669679999997,"lng":-121.92931366000001},{"lat":37.392612460000002,"lng":-121.92936707},{"lat":37.392219539999999,"lng":-121.92980957},{"lat":37.392127989999999,"lng":-121.92991637999999},{"lat":37.392032620000002,"lng":-121.93008423000001},{"lat":37.3919487,"lng":-121.93025969999999},{"lat":37.391799929999998,"lng":-121.93061066},{"lat":37.391620639999999,"lng":-121.93103790000001},{"lat":37.39146805,"lng":-121.93139648},{"lat":37.391391749999997,"lng":-121.93162537000001},{"lat":37.392879489999999,"lng":-121.93271636999999},{"lat":37.393123629999998,"lng":-121.93289185},{"lat":37.393440249999998,"lng":-121.93312073},{"lat":37.394889829999997,"lng":-121.93416594999999},{"lat":37.395057680000001,"lng":-121.93428802},{"lat":37.395141600000002,"lng":-121.93434906},{"lat":37.39521027,"lng":-121.93439484},{"lat":37.396057130000003,"lng":-121.93498993},{"lat":37.397071840000002,"lng":-121.93577576},{"lat":37.397289280000003,"lng":-121.9359436},{"lat":37.397346499999998,"lng":-121.93599700999999},{"lat":37.397415160000001,"lng":-121.93605042},{"lat":37.397483829999999,"lng":-121.93611145},{"lat":37.397434230000002,"lng":-121.93624878},{"lat":37.397407530000002,"lng":-121.93632507},{"lat":37.397262570000002,"lng":-121.93670654},{"lat":37.3971138,"lng":-121.93710326999999},{"lat":37.396961210000001,"lng":-121.9375},{"lat":37.396480560000001,"lng":-121.93871307000001},{"lat":37.395786289999997,"lng":-121.94048309},{"lat":37.395648960000003,"lng":-121.94086455999999},{"lat":37.395614620000003,"lng":-121.94096374999999},{"lat":37.395557400000001,"lng":-121.94113159},{"lat":37.395488739999998,"lng":-121.94132996},{"lat":37.395458220000002,"lng":-121.94141388},{"lat":37.395248410000001,"lng":-121.94202423},{"lat":37.395233150000003,"lng":-121.94206238},{"lat":37.394908909999998,"lng":-121.94288634999999},{"lat":37.394878390000002,"lng":-121.94296265},{"lat":37.394863129999997,"lng":-121.94300842},{"lat":37.394653320000003,"lng":-121.94351958999999},{"lat":37.394565579999998,"lng":-121.94371033},{"lat":37.393821719999998,"lng":-121.94532776},{"lat":37.393741609999999,"lng":-121.94549560999999},{"lat":37.393585209999998,"lng":-121.94589233000001},{"lat":37.393447879999997,"lng":-121.94647217000001},{"lat":37.393348690000003,"lng":-121.94674683},{"lat":37.3932991,"lng":-121.94686127},{"lat":37.393287659999999,"lng":-121.94694518999999},{"lat":37.393295289999998,"lng":-121.94697571},{"lat":37.393314359999998,"lng":-121.94703674},{"lat":37.39342499,"lng":-121.94725800000001},{"lat":37.393772130000002,"lng":-121.9475174},{"lat":37.393829349999997,"lng":-121.94756317},{"lat":37.393917080000001,"lng":-121.94766235},{"lat":37.394012449999998,"lng":-121.94776917},{"lat":37.394100190000003,"lng":-121.94791411999999},{"lat":37.394157409999998,"lng":-121.94800567999999},{"lat":37.394275669999999,"lng":-121.94830322},{"lat":37.394302369999998,"lng":-121.94838715},{"lat":37.394348139999998,"lng":-121.94853209999999},{"lat":37.394672389999997,"lng":-121.94950867},{"lat":37.394874569999999,"lng":-121.94992827999999},{"lat":37.395034789999997,"lng":-121.95021057},{"lat":37.395130160000001,"lng":-121.95038605000001},{"lat":37.395450590000003,"lng":-121.95082092},{"lat":37.3957634,"lng":-121.95133972000001},{"lat":37.396049499999997,"lng":-121.95177459999999},{"lat":37.39626312,"lng":-121.9521637},{"lat":37.396480560000001,"lng":-121.95274353000001},{"lat":37.396572110000001,"lng":-121.95318604000001},{"lat":37.396614069999998,"lng":-121.95355988},{"lat":37.396617890000002,"lng":-121.95387268},{"lat":37.396594999999998,"lng":-121.95427703999999},{"lat":37.396549219999997,"lng":-121.95458221},{"lat":37.396457669999997,"lng":-121.9549408},{"lat":37.39631653,"lng":-121.95536041},{"lat":37.396194459999997,"lng":-121.95566559},{"lat":37.396030430000003,"lng":-121.95608521},{"lat":37.396007539999999,"lng":-121.95614624},{"lat":37.39566422,"lng":-121.95690155},{"lat":37.39551926,"lng":-121.95728302000001},{"lat":37.39508438,"lng":-121.95838165000001},{"lat":37.395008089999997,"lng":-121.95843506},{"lat":37.39496613,"lng":-121.95854187},{"lat":37.394908909999998,"lng":-121.95870972},{"lat":37.394828799999999,"lng":-121.95888519},{"lat":37.39472198,"lng":-121.95913696},{"lat":37.394557949999999,"lng":-121.9595108},{"lat":37.394359590000001,"lng":-121.95998383},{"lat":37.394237519999997,"lng":-121.96026611000001},{"lat":37.393917080000001,"lng":-121.96099854000001},{"lat":37.393772130000002,"lng":-121.96133423000001},{"lat":37.39354324,"lng":-121.96186066},{"lat":37.393486019999997,"lng":-121.96200562},{"lat":37.393249509999997,"lng":-121.9625473},{"lat":37.393215179999999,"lng":-121.96263123},{"lat":37.393066410000003,"lng":-121.96297455},{"lat":37.393051149999998,"lng":-121.96301269999999},{"lat":37.393013000000003,"lng":-121.96310425},{"lat":37.392570499999998,"lng":-121.96417236000001},{"lat":37.392498019999998,"lng":-121.96433258},{"lat":37.392063139999998,"lng":-121.96535492},{"lat":37.39173126,"lng":-121.96612549},{"lat":37.391284939999998,"lng":-121.96716309},{"lat":37.39105988,"lng":-121.96767426},{"lat":37.390846250000003,"lng":-121.9681015},{"lat":37.390682220000002,"lng":-121.96843719},{"lat":37.390636440000002,"lng":-121.96852875},{"lat":37.39064407,"lng":-121.9686203},{"lat":37.390441889999998,"lng":-121.96903992},{"lat":37.390243529999999,"lng":-121.96926879999999},{"lat":37.390186309999997,"lng":-121.96930695},{"lat":37.390075680000002,"lng":-121.96938324},{"lat":37.389919280000001,"lng":-121.96947479000001},{"lat":37.389778139999997,"lng":-121.96949005},{"lat":37.389698029999998,"lng":-121.96944427},{"lat":37.38912964,"lng":-121.96950531},{"lat":37.389148710000001,"lng":-121.96972656},{"lat":37.389194490000001,"lng":-121.97010040000001},{"lat":37.389244079999997,"lng":-121.97032928},{"lat":37.389324190000004,"lng":-121.97055817},{"lat":37.389533999999998,"lng":-121.97102356000001},{"lat":37.389648440000002,"lng":-121.97123718},{"lat":37.389831540000003,"lng":-121.97149657999999},{"lat":37.390029910000003,"lng":-121.97172546},{"lat":37.390247340000002,"lng":-121.97193145999999},{"lat":37.39071655,"lng":-121.97238159},{"lat":37.391063690000003,"lng":-121.97270966000001},{"lat":37.391548159999999,"lng":-121.97315216},{"lat":37.391807559999997,"lng":-121.97338867000001},{"lat":37.391998289999997,"lng":-121.97357941},{"lat":37.392124180000003,"lng":-121.97373962},{"lat":37.392185210000001,"lng":-121.97382355000001},{"lat":37.392330170000001,"lng":-121.9740448},{"lat":37.39235687,"lng":-121.97409820999999},{"lat":37.392436979999999,"lng":-121.97426605},{"lat":37.39250183,"lng":-121.97441101},{"lat":37.392566680000002,"lng":-121.97459412000001},{"lat":37.392623899999997,"lng":-121.97480011},{"lat":37.392650600000003,"lng":-121.97491454999999},{"lat":37.392677310000003,"lng":-121.97507477000001},{"lat":37.392711640000002,"lng":-121.97527313000001},{"lat":37.3927269,"lng":-121.97553253},{"lat":37.392730710000002,"lng":-121.97576904},{"lat":37.392711640000002,"lng":-121.97596741},{"lat":37.392688749999998,"lng":-121.97616576999999},{"lat":37.392681119999999,"lng":-121.97623444},{"lat":37.392620090000001,"lng":-121.97658539},{"lat":37.392562869999999,"lng":-121.9768219},{"lat":37.392505649999997,"lng":-121.97701263},{"lat":37.392471309999998,"lng":-121.97711945},{"lat":37.39241028,"lng":-121.97730255},{"lat":37.392360689999997,"lng":-121.97743988000001},{"lat":37.392269130000003,"lng":-121.97771453999999},{"lat":37.392219539999999,"lng":-121.97786713000001},{"lat":37.392051700000003,"lng":-121.97843933},{"lat":37.391956329999999,"lng":-121.97875977},{"lat":37.391910549999999,"lng":-121.97891998},{"lat":37.391891479999998,"lng":-121.97898102000001},{"lat":37.39185715,"lng":-121.97907257},{"lat":37.391780850000004,"lng":-121.97925567999999},{"lat":37.39175797,"lng":-121.97930907999999},{"lat":37.391750340000002,"lng":-121.97937012},{"lat":37.391754149999997,"lng":-121.97943878},{"lat":37.391773219999997,"lng":-121.97949219},{"lat":37.391807559999997,"lng":-121.97953796},{"lat":37.391860960000002,"lng":-121.97957611},{"lat":37.391925809999996,"lng":-121.97965240000001},{"lat":37.391941070000001,"lng":-121.97966766},{"lat":37.391967770000001,"lng":-121.97970581},{"lat":37.391994480000001,"lng":-121.97976685},{"lat":37.392009739999999,"lng":-121.97983551},{"lat":37.391994480000001,"lng":-121.97990417},{"lat":37.391960140000002,"lng":-121.97994232000001},{"lat":37.391872409999998,"lng":-121.98001862},{"lat":37.391761780000003,"lng":-121.98005676},{"lat":37.391605380000001,"lng":-121.98005676},{"lat":37.391445160000004,"lng":-121.98001862},{"lat":37.391326900000003,"lng":-121.97992705999999},{"lat":37.391216280000002,"lng":-121.97982788},{"lat":37.391132349999999,"lng":-121.97969055},{"lat":37.391090390000002,"lng":-121.97959136999999},{"lat":37.391082760000003,"lng":-121.97953796},{"lat":37.391082760000003,"lng":-121.97946167000001},{"lat":37.39110565,"lng":-121.97940063},{"lat":37.391151430000001,"lng":-121.9793396},{"lat":37.391174319999998,"lng":-121.97932434000001},{"lat":37.391216280000002,"lng":-121.97930907999999},{"lat":37.391273499999997,"lng":-121.97930144999999},{"lat":37.39134979,"lng":-121.97930907999999},{"lat":37.391475679999999,"lng":-121.97930907999999},{"lat":37.391521449999999,"lng":-121.97929382},{"lat":37.391559600000001,"lng":-121.97927094000001},{"lat":37.3915863,"lng":-121.97923279},{"lat":37.391624450000002,"lng":-121.97917175000001},{"lat":37.391696930000002,"lng":-121.97900391},{"lat":37.39173126,"lng":-121.97890472},{"lat":37.391750340000002,"lng":-121.97885132},{"lat":37.39180374,"lng":-121.97868347000001},{"lat":37.391918179999998,"lng":-121.97831726},{"lat":37.392070769999997,"lng":-121.97779083},{"lat":37.39212036,"lng":-121.97763062},{"lat":37.39221191,"lng":-121.97737121999999},{"lat":37.392219539999999,"lng":-121.97731781},{"lat":37.392238620000001,"lng":-121.97720337},{"lat":37.39226532,"lng":-121.97707367},{"lat":37.392269130000003,"lng":-121.97697449},{"lat":37.392261509999997,"lng":-121.97689819},{"lat":37.392246249999999,"lng":-121.97683716},{"lat":37.392215729999997,"lng":-121.97678375},{"lat":37.392154689999998,"lng":-121.97671509},{"lat":37.391983029999999,"lng":-121.97655487},{"lat":37.391849520000001,"lng":-121.97649384},{"lat":37.391593929999999,"lng":-121.97639465},{"lat":37.391384119999998,"lng":-121.97631835999999},{"lat":37.391056059999997,"lng":-121.97621918},{"lat":37.39086914,"lng":-121.97617339999999},{"lat":37.39064407,"lng":-121.97611999999999},{"lat":37.39043427,"lng":-121.97608185},{"lat":37.390342709999999,"lng":-121.97606659},{"lat":37.3902626,"lng":-121.97605133},{"lat":37.390094759999997,"lng":-121.97602843999999},{"lat":37.389915469999998,"lng":-121.97601318},{"lat":37.389499659999998,"lng":-121.97599792},{"lat":37.389343259999997,"lng":-121.97599792},{"lat":37.389225009999997,"lng":-121.97599792},{"lat":37.388710019999998,"lng":-121.97598266999999},{"lat":37.388641360000001,"lng":-121.97598266999999},{"lat":37.388557429999999,"lng":-121.97598266999999},{"lat":37.388492579999998,"lng":-121.97598266999999},{"lat":37.38837814,"lng":-121.97599030000001},{"lat":37.388290410000003,"lng":-121.97599792},{"lat":37.388195039999999,"lng":-121.97600555},{"lat":37.388015750000001,"lng":-121.97602843999999},{"lat":37.387901309999997,"lng":-121.97605133},{"lat":37.387783050000003,"lng":-121.97608185},{"lat":37.387741089999999,"lng":-121.97609711},{"lat":37.387699130000001,"lng":-121.97610474},{"lat":37.387580870000001,"lng":-121.97615051},{"lat":37.38734436,"lng":-121.97624207},{"lat":37.386764530000001,"lng":-121.97647095000001},{"lat":37.386669159999997,"lng":-121.97650908999999},{"lat":37.386302950000001,"lng":-121.97666168000001},{"lat":37.386104580000001,"lng":-121.97673798},{"lat":37.386035919999998,"lng":-121.97676849},{"lat":37.385917659999997,"lng":-121.97681427000001},{"lat":37.385822300000001,"lng":-121.97685242},{"lat":37.38563156,"lng":-121.97692871},{"lat":37.385528559999997,"lng":-121.97697449},{"lat":37.385490419999996,"lng":-121.97698975},{"lat":37.385456089999998,"lng":-121.97700500000001},{"lat":37.385356899999998,"lng":-121.97704315},{"lat":37.385112759999998,"lng":-121.97714233000001},{"lat":37.384963990000003,"lng":-121.97719574},{"lat":37.384838100000003,"lng":-121.97724915000001},{"lat":37.384735110000001,"lng":-121.97728729000001},{"lat":37.384624479999999,"lng":-121.97733307},{"lat":37.384376529999997,"lng":-121.97743988000001},{"lat":37.384246830000002,"lng":-121.97750092},{"lat":37.3841362,"lng":-121.97754669},{"lat":37.384010310000001,"lng":-121.97759247},{"lat":37.383880619999999,"lng":-121.97763824},{"lat":37.38380051,"lng":-121.97766876},{"lat":37.383705139999996,"lng":-121.97769165},{"lat":37.383541110000003,"lng":-121.97773743},{"lat":37.383483890000001,"lng":-121.97774506},{"lat":37.383319849999999,"lng":-121.97777557000001},{"lat":37.383178710000003,"lng":-121.97779083},{"lat":37.383140560000001,"lng":-121.97779846},{"lat":37.38305664,"lng":-121.97780609},{"lat":37.38295746,"lng":-121.97781372},{"lat":37.38286591,"lng":-121.97782135},{"lat":37.38247681,"lng":-121.97782135},{"lat":37.38235092,"lng":-121.97782135},{"lat":37.381694789999997,"lng":-121.97782135},{"lat":37.381137850000002,"lng":-121.97781372},{"lat":37.380622860000003,"lng":-121.97782135},{"lat":37.380626679999999,"lng":-121.97891235},{"lat":37.38061905,"lng":-121.97949982},{"lat":37.380607599999998,"lng":-121.98047638},{"lat":37.380622860000003,"lng":-121.98080444},{"lat":37.380641939999997,"lng":-121.98110962},{"lat":37.38069153,"lng":-121.98188782},{"lat":37.380702970000002,"lng":-121.98210143999999},{"lat":37.380702970000002,"lng":-121.98232269},{"lat":37.380699159999999,"lng":-121.98254394999999},{"lat":37.380657200000002,"lng":-121.98322296000001},{"lat":37.380622860000003,"lng":-121.98355865000001},{"lat":37.380607599999998,"lng":-121.98388672},{"lat":37.380588529999997,"lng":-121.98473358},{"lat":37.380596160000003,"lng":-121.98532104},{"lat":37.380588529999997,"lng":-121.98621368000001},{"lat":37.380577090000003,"lng":-121.98672485},{"lat":37.380580899999998,"lng":-121.98678588999999},{"lat":37.380580899999998,"lng":-121.98685455},{"lat":37.380584720000002,"lng":-121.98731232},{"lat":37.380592350000001,"lng":-121.98777008},{"lat":37.38059998,"lng":-121.9879837},{"lat":37.380561829999998,"lng":-121.98921204},{"lat":37.380577090000003,"lng":-121.98982239},{"lat":37.380630490000001,"lng":-121.99090576},{"lat":37.380630490000001,"lng":-121.99105835},{"lat":37.380622860000003,"lng":-121.99150847999999},{"lat":37.38054657,"lng":-121.99269867},{"lat":37.38054657,"lng":-121.99338530999999},{"lat":37.380580899999998,"lng":-121.99510956},{"lat":37.380577090000003,"lng":-121.99546814},{"lat":37.380584720000002,"lng":-121.99573517},{"lat":37.380584720000002,"lng":-121.99584960999999},{"lat":37.380584720000002,"lng":-121.99598693999999},{"lat":37.380580899999998,"lng":-121.99655151},{"lat":37.380558010000001,"lng":-121.99712372},{"lat":37.380550380000003,"lng":-121.99728394},{"lat":37.380477910000003,"lng":-121.99741364},{"lat":37.380477910000003,"lng":-121.99821472000001},{"lat":37.380477910000003,"lng":-121.99952698},{"lat":37.380485530000001,"lng":-122.00055695},{"lat":37.380489349999998,"lng":-122.00093079},{"lat":37.38049316,"lng":-122.00139618},{"lat":37.380500789999999,"lng":-122.0022049},{"lat":37.380500789999999,"lng":-122.00257874},{"lat":37.380512240000002,"lng":-122.00299072},{"lat":37.380527499999999,"lng":-122.00320435},{"lat":37.380863189999999,"lng":-122.00543976},{"lat":37.380889889999999,"lng":-122.00566864},{"lat":37.380897519999998,"lng":-122.00584412000001},{"lat":37.380905149999997,"lng":-122.00646209999999},{"lat":37.380916599999999,"lng":-122.00732422},{"lat":37.380943299999998,"lng":-122.00971985},{"lat":37.380943299999998,"lng":-122.01027679000001},{"lat":37.380939480000002,"lng":-122.01180266999999},{"lat":37.380939480000002,"lng":-122.01200104},{"lat":37.380939480000002,"lng":-122.01235962},{"lat":37.38098145,"lng":-122.01365662000001},{"lat":37.381015779999998,"lng":-122.01480865000001},{"lat":37.381023409999997,"lng":-122.0148468},{"lat":37.381023409999997,"lng":-122.01499176},{"lat":37.381076810000003,"lng":-122.01560974},{"lat":37.38111877,"lng":-122.01580048},{"lat":37.381252289999999,"lng":-122.01641846},{"lat":37.381336210000001,"lng":-122.01681519},{"lat":37.381668089999998,"lng":-122.01831055},{"lat":37.381687159999998,"lng":-122.01837921000001},{"lat":37.381690980000002,"lng":-122.0184021},{"lat":37.381698610000001,"lng":-122.01844025},{"lat":37.381069179999997,"lng":-122.01864624},{"lat":37.380844119999999,"lng":-122.01872253000001},{"lat":37.38069153,"lng":-122.01877594},{"lat":37.380592350000001,"lng":-122.01880645999999},{"lat":37.38047409,"lng":-122.01884459999999},{"lat":37.380310059999999,"lng":-122.01889801},{"lat":37.380168910000002,"lng":-122.01894378999999},{"lat":37.379619599999998,"lng":-122.01912689},{"lat":37.378971100000001,"lng":-122.01934814000001},{"lat":37.378654480000002,"lng":-122.01944733000001},{"lat":37.378311160000003,"lng":-122.01956177},{"lat":37.377651210000003,"lng":-122.01974487},{"lat":37.377471919999998,"lng":-122.01979828},{"lat":37.377117159999997,"lng":-122.01989746},{"lat":37.37685776,"lng":-122.01999664},{"lat":37.376411439999998,"lng":-122.02015686},{"lat":37.376297000000001,"lng":-122.02020263999999},{"lat":37.375774380000003,"lng":-122.02033996999999},{"lat":37.375595089999997,"lng":-122.02040863000001},{"lat":37.375526430000001,"lng":-122.02044678},{"lat":37.375465390000002,"lng":-122.02047729},{"lat":37.37526321,"lng":-122.02056885},{"lat":37.375205989999998,"lng":-122.02059174},{"lat":37.375087739999998,"lng":-122.02065277},{"lat":37.374942779999998,"lng":-122.02072905999999},{"lat":37.374748230000002,"lng":-122.02080536},{"lat":37.374603270000001,"lng":-122.02085876},{"lat":37.374458310000001,"lng":-122.0209198},{"lat":37.374073029999998,"lng":-122.02102661000001},{"lat":37.373851780000003,"lng":-122.02108002},{"lat":37.373790739999997,"lng":-122.02114868},{"lat":37.37376785,"lng":-122.02118683},{"lat":37.37374878,"lng":-122.02122498},{"lat":37.373733520000002,"lng":-122.02127838},{"lat":37.373718259999997,"lng":-122.02136993000001},{"lat":37.373718259999997,"lng":-122.02160644999999},{"lat":37.373863219999997,"lng":-122.02230835},{"lat":37.373905180000001,"lng":-122.02251434},{"lat":37.37398529,"lng":-122.02291107000001},{"lat":37.374031070000001,"lng":-122.02306366000001},{"lat":37.37411118,"lng":-122.02327728},{"lat":37.374198909999997,"lng":-122.02344513},{"lat":37.374309539999999,"lng":-122.02361298},{"lat":37.374431610000002,"lng":-122.02375793},{"lat":37.374553679999998,"lng":-122.02387238},{"lat":37.37478256,"lng":-122.02406311},{"lat":37.374988559999998,"lng":-122.0242157},{"lat":37.375152589999999,"lng":-122.02433777},{"lat":37.375247960000003,"lng":-122.02440643},{"lat":37.375473020000001,"lng":-122.02457428},{"lat":37.375583650000003,"lng":-122.02468872},{"lat":37.375835420000001,"lng":-122.02496338},{"lat":37.37594223,"lng":-122.02510071},{"lat":37.37603378,"lng":-122.02524567},{"lat":37.376193999999998,"lng":-122.02553558},{"lat":37.37625122,"lng":-122.02567291},{"lat":37.376342770000001,"lng":-122.02597046},{"lat":37.376689910000003,"lng":-122.02698517},{"lat":37.376945499999998,"lng":-122.02780151},{"lat":37.377204900000002,"lng":-122.02861786},{"lat":37.377254489999999,"lng":-122.02873993},{"lat":37.377262119999997,"lng":-122.02876282},{"lat":37.377235409999997,"lng":-122.02880859},{"lat":37.377109529999998,"lng":-122.02886963},{"lat":37.376953129999997,"lng":-122.02894592},{"lat":37.376441960000001,"lng":-122.02910614},{"lat":37.3757515,"lng":-122.02934265},{"lat":37.375766749999997,"lng":-122.02940369},{"lat":37.375976559999998,"lng":-122.03039551000001},{"lat":37.37620544,"lng":-122.03144836},{"lat":37.376598360000003,"lng":-122.03132629},{"lat":37.376983639999999,"lng":-122.03119658999999},{"lat":37.377269740000003,"lng":-122.03111267},{"lat":37.37731934,"lng":-122.03109741},{"lat":37.377586360000002,"lng":-122.03101349000001}]}},"route_color":"#29588C","search_api_autocomplete":{"acquia_search":{"delay":0,"auto_submit":true,"min_length":2}},"user":{"uid":0,"permissionsHash":"ef0166c6d3e0f3d9cb1a71a3cb5364e50c18df348b62f501977f7ecdd914fa5e"}}</script>
+<script src="/sites/default/files/js/optimized/js_dxIVcwvQ00owLGoUGPTfRYXU-T5rnj8Xi0cXfb3Kn58.CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo.js?v=3.4.1"></script>
+<script src="/sites/default/files/js/optimized/js_D7ruvyOZgUUq98JwH2VxGWN2oRfnJHbZpZdPPrKwLi0.QatGrKZIzwSZ8GJO8WWKpKKowaS66TkbtoJi6eoAIBQ.js?v=3.4.1"></script>
+<script src="/sites/default/files/js/optimized/js_a5UiM5riCCx8GQk4IPly81KWzPcsHnVhzndmZfqUaTw.wxH7koTp9bG2Z10wC4YmQwXAhSY1D9C5sIoDX3OtOYc.js?v=2.2.0"></script>
+<script src="/sites/default/files/js/optimized/js_Hpe5jrMuKXrV4HSTMApXJsNBxraAgcHUrTjxkwWKqy8.X49p7FIfeZivRVmFqO3m2NzzUntDeV_j0m8fG1elpVQ.js?v=8.8.12"></script>
+<script src="/sites/default/files/js/optimized/js_V1oRQ-kJlXBZaEklOtPUe_1t8-l0RS94HJ3gsqxKikc.mQ_aYcEwOof2MXtH_vgkVS1hEgnwU3vU-qqWSNPeE2M.js?v=8.8.12"></script>
+<script src="/sites/default/files/js/optimized/js_KRjtvzl6UujB23-j_sF6dqOcbqg2z8ej98A8RU9bGsg.QWg-C9_tAOdN4U2GRB4oknHKcLKpTHIWU7mkncMvsk4.js?v=8.8.12"></script>
+<script src="/sites/default/files/js/optimized/js_pbrt6BW6zk2scxcVck6pKOhrsnS-4n6mdUeoPTfK2aM.3_fp1IZkrj574ri264mV4AishrFo_Ty68FmO3fGX0QI.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_CbOM1f2ZQjSvD29Vzs3nHYsIjSyprydKvJ38uk-EKzQ.XX2sWU3jv8J4hmImMCYGZDOCZimlQXjB0xJSEDqpS64.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_hW1rGb2Kgerv3Nv28qmm-BQ80tvi3gEzBPspD6pBvXc.niNCW8LgFiF7S18fbmZ5_ZkI-4RsoB-GYL8cYSXq7pQ.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_SpWiM_QFpYbnP3qrlmV1Aa2OGQVC1G0okd3jErKS1EI.hckLE2UGRFk2scY-HY8jnowo3NPDXSf-KaVsoFCcyTU.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_MtyIABJMbmxowB_tfHYlcyx_7jZa39Vd6OT3LaLlgYI.1gnB3WoV-VRyM-Ew0fYFfRNnH5IwbXQKpfODs-QtV1M.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_yt_B6-UYT74y4dRKoGQ9gfLb0O0RDb4vG2LIGOYlHq8.-H0hNSRNuRHfT-NfJajV51ju2bF4IPuBD4sovf7d2MU.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_4UhuqPqc2MY5S0pjEK-k4n7DdJ7PD_M5YaTWzny9odQ.GnNFXYODvId9IqWUG8dQFP8UO5QmBtHxEZxvbCn2CAc.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_OYMUXIYk_UxVlsQSqo3_hSK3aC6qbx7cz9wNrtTse48.X4ofaaLvQMLdQTuKYGmzJUKlxI7ygZp3QBN1Pe1_FLk.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_rJQeYB7caXNCdmgzJ4t5f6f6CrVuk9_CJlqK8yDBzqk.I9F3SRv2IyVHAokj40y0-zE4tcK23MH2Q9SxSUy7Ews.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_nid2EqpGhQxAdRhxM2zJwYiR530Ld4zghmElZoqjxgU.5JeuZBs35QPbmjm8gKKhTCtNJnKvTczGfHs7KJ-ge1E.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_A7R00KDzeuDMEsk6DOs_s2ZrOjO5c23zgXuffR4Khqc.TtkHwMzzjUUrrqys2gGkIsikDoT4xpMTpcL7AiqEggo.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_kX_io-fynaVxr7hsmpnwBq9bFC5gzI4bJ8DgZmpTAPE.LLP8VQxnsZKwvuAd-veRkatZ1rAigA-EqcRMFPrvqHw.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_4VhSX4lEyBg9lxgOnT6eUHtdfwq4GgGv6TSm_aWIhzc.veqHxEKWg0ziM9OBeNAh7H9Z6PTizLYinIKqZd5RnSI.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_VycJ3FTVVaVyhSCcLXYEaSJoilQ8WxeImUFAjqgR5Y8.p8VMongOVJprDzzsQ_Eo_JSzWiSZ_TtaHKRlI9re-zw.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_Ry7vynlNZLLNpd3_JR7HvKHRX_GH0raz-kB756oJv3g.TFx2IV2cftjxyLUfxvxKuVHtFNSkb5uvFxLPPy7AaeM.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_osCIx8qqQgaunpgKzYC-jq1mXs9IpwKeKHrdaRLB_3U.twXefIrqQBxo78ilOyfLo9TjVwWFFwM8FYA-4Y8JvSs.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_QZ6R3WHZ2xvc16JcQ7QBGg7ZW5Q69JxQSKxhelKIbIE.ivBnJtK5ee9OEquL39M3h15eblhZHyyIofG2PdzvE7k.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_EuUICA2nMp4LszfxwpFQu79ABRuSW7c3LnqEbg-D50M.w-LAzFVl7c2JD-pk8J7u5oEefhmRzp32W97alN3zVtw.js?v=8.8.12"></script>
+<script src="//static.addtoany.com/menu/page.js" async></script>
+<script src="/sites/default/files/js/optimized/js_ykLxvKp5rvcarVrf36wQkum3dKR3rl-G_-w1QumySTw.ikup2Su_4IByHFAHX4rmMY3BfaDu_RDNTQ5xXSrcX2c.js?v=8.8.12"></script>
+<script src="/sites/default/files/js/optimized/js_mjv4qhOv2_1-EQeYpZwvWqHcMokP3Cu36uHh9tRNXFY.9ULEOKWpC-Ykangvhy9O-pSh8msh8gIDssqCu5azGPU.js?v=8.8.12"></script>
+<script src="/sites/default/files/js/optimized/js_OonsOPwD82qZHWONHeLCKq9TCK38bZAYwK0uqdxykkE.1A78rJEdiWTzco6qdn3igTBv9VupN3Q1ozZNTR4WE_Y.js?v=1.4.1"></script>
+<script src="/sites/default/files/js/optimized/js_KnxXGkJpHG8kOGHXwfHKXMWAiaWprlfnA_jjmOcIorw.UhWo3jIGFCYxQWswLERJyDulgplASSwv90yLDnv8gfE.js?v=8.8.12"></script>
+<script src="/sites/default/files/js/optimized/js_JACPaM9QHqEgaQx-fUyO64Vw-THrBKf7zWL0ybIS2cM.lNxtqb7dyadZUKCD2pQW5ZKExeyyE_ARrV3WBeqetHQ.js?v=8.8.12"></script>
+<script src="/sites/default/files/js/optimized/js_WbQfRfxQHIAE1TihBCYAzUH5rPFVqaKQoDJpwtXYwfo.1QFsQL7w8XCZ4mhmNZiI-VvRDH5mhSHg5DwTlCaBq5o.js?v=8.8.12"></script>
+<script src="/sites/default/files/js/optimized/js_uNJu_xjQxN_M0efBflHNCJiHcWokcElmktoKpkisCv8.CYMEGZcWeEXsGSXWb-LqAqO-b9RHE0w2YSDulaYTMX8.js?qpq4lc"></script>
+<script src="/sites/default/files/js/optimized/js_Z0HESkWq9BQr8FjvcPkrV1qbipkhKkujrCmwStTvRsY.YbNVsjknSL32QG9fv9spQcsedD_tfiHwdAWgQ4mlJx8.js?qpq4lc"></script>
+<script src="/sites/default/files/js/optimized/js_8wJNvXkNYvF07PjTjuJ0R0Fa0Xp46EQHrxZY05Kj1OM.tR7fz2fCeycqI9_V8mL9nyTc4lI14kg2Qm6zZHuupxE.js?qpq4lc"></script>
+<script src="/sites/default/files/js/optimized/js_GJiLOaj-b_azY_LkHzw-aIBoAOK7xcN0IyncKKONfGk.pZUbpMr7X8uqrPTfz71Qftw3SdmKCMCk4DhW_eoHlj0.js?qpq4lc"></script>
+<script src="/sites/default/files/js/optimized/js_cVUbXHfuMvYDUGbiH_A4KftQolEoO_s5UZyVzSDtnDk.S6xAe41Vk8Hyht_QbHrww6tQdEbE8hKvfI9hIoKtBk0.js?qpq4lc"></script>
+<script src="/sites/default/files/js/optimized/js_s6CyVVcRQE1DKEIac_vp3tMVKA-GcTjHs5A6ESrw-No.czxDCyXll107Z9vV9IMSqVMB6y_FzvLf-5wMCQqgPLY.js?qpq4lc"></script>
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAin2h30D1RYab57eKH7TP_mTqPjRvLUhc&amp;libraries=geometry"></script>
+<script src="/sites/default/files/js/optimized/js_5lyEgtuYzFbknt789sXbvgY6WOEBhn68zCRaGR5wIJc.8WoxUr4zLOuzjnPgEMN_s1ZWV7YzFQhc7okKrnz83Js.js?v=8.8.12"></script>
+<script src="/sites/default/files/js/optimized/js_RpLV1j1SEgkAOBNxIxvzKXRlefOlhPa03lpGt46bJEg.ZiaA4PtorXpnwDiPo41CqckFGRcs8vEtJBErGFQVX1I.js?v=8.8.12"></script>
+<script src="/sites/default/files/js/optimized/js_tg-f19aKzkVeMWC-X-cyQ1NQjjxpIPkQyCogQFGZtYg.9_wEuUYaQN-jbSfCsq2220fPqkpgXbJ8aZ60tXdWw8U.js?v=8.8.12"></script>
+<script src="/sites/default/files/js/optimized/js_C-liKJvlkz_qR-h91NsC8Pi3m69Skqfl-cdguxvLY0k.f3h3gcoT3x3sZ7YgDY-yQMb-pCve9jTGrR9F7abvxow.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_GnL6PN0DwetbgHQNUB_jTAoYX4_QtJIOAKk1xqUy61w.0MVAOYT8QyUlp6GGHfQ8MstY0D_IaOb7r9uxUCQKq4s.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_ipwKzcS_PAqOhKMg2LI8BpCyo_g-Wweuyic3L1dcYN0.TQLATtMKi0aFzPbxqz3uNarnsXnY-MzBC_MKNUfEupE.js?v=1.12.1"></script>
+<script src="/sites/default/files/js/optimized/js_IajlascLCsQLu75VdqjJsIH2F-Xrzslx-7-36nRMNVw.ijfJET0W28tmrL70WM5dPi8QPQusJxer2miUIR53bhw.js?qpq4lc"></script>
+<script src="/sites/default/files/js/optimized/js_ox9WSwYIBdo6KQhr3xt5PDbHbZslniTtv3c6iknc2GQ.gRNtakCHhDcbIIKTXrjQzVeipFkf52EYLMQXY0LAWVg.js?qpq4lc"></script>
+
+    <script src="/themes/custom/de_theme/bower_components/matchHeight/jquery.matchHeight.js" type="text/javascript"></script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"12630f4102","applicationID":"581591516","transactionName":"MVMDMUBVDRFUUkZdDAgZIAZGXQwMGnVAQRMHWj0LXVAGPnZeXEARCVoNAEBoLQ1RVGRdBhF1DgtGRgwOWVRAGV0QXwQS","queueTime":0,"applicationTime":529,"atts":"HRQARwhPHh8=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>
