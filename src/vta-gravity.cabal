@@ -1,0 +1,27 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 77bc65b2c3e52692621687223350af8de2d0b25c9a18ef1a820b2cd5467e2e48
+
+name:           vta-gravity
+version:        0.0.0
+build-type:     Simple
+
+library
+  exposed-modules:
+      Census
+  other-modules:
+      Merge
+      Paths_vta_gravity
+  hs-source-dirs:
+      ./.
+  build-depends:
+      base
+    , bytestring
+    , cassava
+    , containers
+    , vector
+  default-language: Haskell2010
