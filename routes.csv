@@ -1,0 +1,117 @@
+﻿FID,full_name,Frequency1,LineID1,LineAbb,Line_url,Category,colorcode
+0,55 Old Ironsides Station - De Anza College - A - inbound,30,55,55,https://www.vta.org/go/routes/55,local,29588c
+1,55 Old Ironsides Station - De Anza College - A - outbound,30,55,55,https://www.vta.org/go/routes/55,local,29588c
+2,Rapid 523 Berryessa BART -  Lockheed Martin via De Anza College - A - inbound,15,523,rapid-523,https://www.vta.org/go/routes/rapid-523,frequent,e4002b
+3,Rapid 523 Berryessa BART -  Lockheed Martin via De Anza College - A - outbound,15,523,rapid-523,https://www.vta.org/go/routes/rapid-523,frequent,e4002b
+4,59 Valley Fair - Baypointe Station via Alviso - A - inbound,30,59,59,https://www.vta.org/go/routes/59,local,29588c
+5,59 Valley Fair - Baypointe Station via Alviso - A - outbound,30,59,59,https://www.vta.org/go/routes/59,local,29588c
+6,51H Moffett Field / Ames Center - De Anza College - northbound,30,51H,51h,https://www.vta.org/go/routes/51h,local,29588c
+7,51H Moffett Field / Ames Center - De Anza College - southbound,30,51H,51h,https://www.vta.org/go/routes/51h,local,29588c
+8,61T Good Sam Hospital - Bascom & Union - SB VIA BASCOM,30,61T,61t,https://www.vta.org/go/routes/61t,local,29588c
+9,61T Good Sam Hospital - Bascom & Union - SB VIA UNION,30,61T,61t,https://www.vta.org/go/routes/61t,local,29588c
+10,61L Berryessa BART - Sierra & Piedmont - southbound,30,61L,61l,https://www.vta.org/go/routes/61l,local,29588c
+11,61L Berryessa BART - Sierra & Piedmont - northbound,30,61L,61l,https://www.vta.org/go/routes/61l,local,29588c
+12,42 Evergreen Valley College - Santa Teresa Station - A - inbound,60,42,42,https://www.vta.org/go/routes/42,local,29588c
+13,42 Evergreen Valley College - Santa Teresa Station - A - outbound,60,42,42,https://www.vta.org/go/routes/42,local,29588c
+14,Rapid 500 San Jose Diridon Station - Berryessa BART - inbound,15,500,rapid-500,https://www.vta.org/go/routes/rapid-500,frequent,e4002b
+15,Rapid 500 San Jose Diridon Station - Berryessa BART - outbound,15,500,rapid-500,https://www.vta.org/go/routes/rapid-500,frequent,e4002b
+16,83 Almaden & McKean - Ohlone-Chynoweth Station - inbound,60,83,83,https://www.vta.org/go/routes/83,local,29588c
+17,83 Almaden & McKean - Ohlone-Chynoweth Station - outbound,60,83,83,https://www.vta.org/go/routes/83,local,29588c
+18,22 Palo Alto Transit Center - Eastridge - A - inbound,15,22,22,https://www.vta.org/go/routes/22,frequent,e4002b
+19,22 Palo Alto Transit Center - Eastridge - A - outbound,15,22,22,https://www.vta.org/go/routes/22,frequent,e4002b
+20,72 Downtown San Jose - Senter & Monterey via McLaughlin - A - inbound,15,72,72,https://www.vta.org/go/routes/72,frequent,e4002b
+21,72 Downtown San Jose - Senter & Monterey via McLaughlin - A - outbound,15,72,72,https://www.vta.org/go/routes/72,frequent,e4002b
+22,68 San Jose Diridon Station - Gilroy Transit Center - A - inbound,15,68,68,https://www.vta.org/go/routes/68,frequent,e4002b
+23,68 San Jose Diridon Station - Gilroy Transit Center - A - outbound,15,68,68,https://www.vta.org/go/routes/68,frequent,e4002b
+24,60 Milpitas BART - Winchester Station via SJC Airport - A - inbound,15,60,60,https://www.vta.org/go/routes/60,frequent,e4002b
+25,60 Milpitas BART - Winchester Station via SJC Airport - A - outbound,15,60,60,https://www.vta.org/go/routes/60,frequent,e4002b
+26,25L Valley Medical Center - De Anza College - EASTBOUND,30,25L,25l,https://www.vta.org/go/routes/25l,local,29588c
+27,25L Valley Medical Center - De Anza College - WESTBOUND,30,25L,25l,https://www.vta.org/go/routes/25l,local,29588c
+28,Express 168 Gilroy / Morgan Hill - San Jose Diridon - inbound,Various,Express 168,express-168,https://www.vta.org/go/routes/express-168,express,00b140
+29,Express 168 Gilroy / Morgan Hill - San Jose Diridon - outbound,Various,Express 168,express-168,https://www.vta.org/go/routes/express-168,express,00b140
+30,85 Gilroy Transit Center - Saint Louise Hospital via west Gilroy - A - inbound,60,85,85,https://www.vta.org/go/routes/85,local,29588c
+31,85 Gilroy Transit Center - Saint Louise Hospital via west Gilroy - A - outbound,60,85,85,https://www.vta.org/go/routes/85,local,29588c
+32,70L Milpitas BART to Berryessa BART - northbound,30,70L,70l,https://www.vta.org/go/routes/70l,local,29588c
+33,70L Milpitas BART to Berryessa BART - southbound,30,70L,70l,https://www.vta.org/go/routes/70l,local,29588c
+34,26 West Valley College - Eastridge - A - inbound,15,26,26,https://www.vta.org/go/routes/26,frequent,e4002b
+35,26 West Valley College - Eastridge - A - outbound,15,26,26,https://www.vta.org/go/routes/26,frequent,e4002b
+36,70 Milpitas BART - Eastridge via Jackson - A - inbound,15,70,70,https://www.vta.org/go/routes/70,frequent,e4002b
+37,70 Milpitas BART - Eastridge via Jackson - A - outbound,15,70,70,https://www.vta.org/go/routes/70,frequent,e4002b
+38,40 Foothill College - Mountain View Transit Center via North Bayshore - A - inbound,30,40,40,https://www.vta.org/go/routes/40,local,29588c
+39,40 Foothill College - Mountain View Transit Center via North Bayshore - A - outbound,30,40,40,https://www.vta.org/go/routes/40,local,29588c
+40,64B McKee & White - Almaden Expressway & Camden - A - inbound,30,64B,64b,https://www.vta.org/go/routes/64b,frequent,29588c
+41,64B McKee & White - Almaden Expressway & Camden - A - outbound,30,64B,64b,https://www.vta.org/go/routes/64b,frequent,29588c
+42,56 Lockheed Martin - Tamien Station - A - inbound,30,56,56,https://www.vta.org/go/routes/56,local,29588c
+43,56 Lockheed Martin - Tamien Station - A - outbound,30,56,56,https://www.vta.org/go/routes/56,local,29588c
+44,25 De Anza College - Alum Rock Station via Valley Med - inbound,15,25,25,https://www.vta.org/go/routes/25,frequent,e4002b
+45,25 De Anza College - Alum Rock Station via Valley Med - outbound,15,25,25,https://www.vta.org/go/routes/25,frequent,e4002b
+46,20 Milpitas BART - Sunnyvale Transit Center - inbound,15,20,20,https://www.vta.org/go/routes/20,frequent,e4002b
+47,20 Milpitas BART - Sunnyvale Transit Center - outbound,15,20,20,https://www.vta.org/go/routes/20,frequent,e4002b
+48,23 De Anza College - Alum Rock Station via Stevens Creek - A - inbound,15,23,23,https://www.vta.org/go/routes/23,frequent,e4002b
+49,23 De Anza College - Alum Rock Station via Stevens Creek - A - outbound,15,23,23,https://www.vta.org/go/routes/23,frequent,e4002b
+50,87 Morgan Hill Civic Center - Burnett Avenue - A - inbound,60,87,87,https://www.vta.org/go/routes/87,local,29588c
+51,87 Morgan Hill Civic Center - Burnett Avenue - A - outbound,60,87,87,https://www.vta.org/go/routes/87,local,29588c
+52,86 Gavilan College - Gilroy Transit Center - inbound,30,86,86,https://www.vta.org/go/routes/86,local,29588c
+53,86 Gavilan College - Gilroy Transit Center - outbound,30,86,86,https://www.vta.org/go/routes/86,local,29588c
+54,37 West Valley College - Capitol Station - A - inbound,60,37,37,https://www.vta.org/go/routes/37,local,29588c
+55,37 West Valley College - Capitol Station - A - outbound,60,37,37,https://www.vta.org/go/routes/37,local,29588c
+56,52 Foothill College - Mountain View Transit Center via El Monte - A - inbound,30,52,52,https://www.vta.org/go/routes/52,local,29588c
+57,52 Foothill College - Mountain View Transit Center via El Monte - A - outbound,30,52,52,https://www.vta.org/go/routes/52,local,29588c
+58,Blue Line Baypointe - Santa Teresa - inbound,15,Blue Line,blue-line,https://www.vta.org/go/routes/blue-line,frequent,e4002b
+59,Blue Line Baypointe - Santa Teresa - outbound,15,Blue Line,blue-line,https://www.vta.org/go/routes/blue-line,frequent,e4002b
+60,71 Milpitas BART - Capitol Station - A - inbound,30,71,71,https://www.vta.org/go/routes/71,local,29588c
+61,71 Milpitas BART - Capitol Station - A - outbound,30,71,71,https://www.vta.org/go/routes/71,local,29588c
+62,57 Old Ironsides Station - West Valley College - A - inbound,15,57,57,https://www.vta.org/go/routes/57,frequent,e4002b
+63,57 Old Ironsides Station - West Valley College - A - outbound,15,57,57,https://www.vta.org/go/routes/57,frequent,e4002b
+64,64A McKee & White - Ohlone-Chynoweth Station - A - inbound,30,64A,64a,https://www.vta.org/go/routes/64a,frequent,29588c
+65,64A McKee & White - Ohlone-Chynoweth Station - A - outbound,30,64A,64a,https://www.vta.org/go/routes/64a,frequent,29588c
+66,Express 121 Gilroy / Morgan Hill - Lockheed Martin - inbound,Various,Express 121,express-121,https://www.vta.org/go/routes/express-121,express,00b140
+67,Express 121 Gilroy / Morgan Hill - Lockheed Martin - outbound,Various,Express 121,express-121,https://www.vta.org/go/routes/express-121,express,00b140
+68,Express 102 South San Jose - Stanford Research Park - inbound,Various,Express 102,express-102,https://www.vta.org/go/routes/express-102,express,00b140
+69,Express 102 South San Jose - Stanford Research Park - outbound,Various,Express 102,express-102,https://www.vta.org/go/routes/express-102,express,00b140
+70,84 Gilroy Transit Center - Saint Louise Hospital via Gilroy Outlets - inbound,60,84,84,https://www.vta.org/go/routes/84,local,29588c
+71,84 Gilroy Transit Center - Saint Louise Hospital via Gilroy Outlets - outbound,60,84,84,https://www.vta.org/go/routes/84,local,29588c
+72,77 Milpitas BART - Eastridge via King - A - inbound,15,77,77,https://www.vta.org/go/routes/77,frequent,e4002b
+73,77 Milpitas BART - Eastridge via King - A - outbound,15,77,77,https://www.vta.org/go/routes/77,frequent,e4002b
+74,27 Winchester Station - Kaiser San Jose via Downtown Los Gatos - A - inbound,30,27,27,https://www.vta.org/go/routes/27,local,29588c
+75,27 Winchester Station - Kaiser San Jose via Downtown Los Gatos - A - outbound,30,27,27,https://www.vta.org/go/routes/27,local,29588c
+76,31 Evergreen Valley College - Eastridge - A - inbound,30,31,31,https://www.vta.org/go/routes/31,local,29588c
+77,31 Evergreen Valley College - Eastridge - A - outbound,30,31,31,https://www.vta.org/go/routes/31,local,29588c
+78,73 Downtown San Jose - Senter & Monterey via Senter - inbound,15,73,73,https://www.vta.org/go/routes/73,frequent,e4002b
+79,73 Downtown San Jose - Senter & Monterey via Senter - outbound,15,73,73,https://www.vta.org/go/routes/73,frequent,e4002b
+80,39 Eastridge - The Villages - inbound,60,39,39,https://www.vta.org/go/routes/39,local,29588c
+81,39 Eastridge - The Villages - outbound,60,39,39,https://www.vta.org/go/routes/39,local,29588c
+82,44 Milpitas BART - McCarthy Ranch via Tasman & Alder - inbound,30,44,44,https://www.vta.org/go/routes/44,local,29588c
+83,44 Milpitas BART - McCarthy Ranch via Tasman & Alder - outbound,30,44,44,https://www.vta.org/go/routes/44,local,29588c
+84,89 California Avenue Caltrain - Palo Alto VA Hospital - A - inbound,20,89,89,https://www.vta.org/go/routes/89,local,29588c
+85,89 California Avenue Caltrain - Palo Alto VA Hospital - A - outbound,20,89,89,https://www.vta.org/go/routes/89,local,29588c
+86,26L West Valley College - Westgate - WESTBOUND,30,26L,26l,https://www.vta.org/go/routes/26l,local,29588c
+87,26L West Valley College - Westgate - EASTBOUND,30,26L,26l,https://www.vta.org/go/routes/26l,local,29588c
+88,Rapid 522 Palo Alto Transit Center - Eastridge - A - inbound,12,522,rapid-522,https://www.vta.org/go/routes/rapid-522,frequent,e4002b
+89,Rapid 522 Palo Alto Transit Center - Eastridge - A - outbound,12,522,rapid-522,https://www.vta.org/go/routes/rapid-522,frequent,e4002b
+90,47 Milpitas BART - McCarthy Ranch via Park Victoria - A - inbound,30,47,47,https://www.vta.org/go/routes/47,local,29588c
+91,47 Milpitas BART - McCarthy Ranch via Park Victoria - A - outbound,30,47,47,https://www.vta.org/go/routes/47,local,29588c
+92,61 Sierra & Piedmont - Good Samaritan Hospital - A - inbound,15,61,61,https://www.vta.org/go/routes/61,frequent,e4002b
+93,61 Sierra & Piedmont - Good Samaritan Hospital - A - outbound,15,61,61,https://www.vta.org/go/routes/61,frequent,e4002b
+94,66 North Milpitas - Kaiser San Jose - A - inbound,15,66,66,https://www.vta.org/go/routes/66,frequent,e4002b
+95,66 North Milpitas - Kaiser San Jose - A - outbound,15,66,66,https://www.vta.org/go/routes/66,frequent,e4002b
+96,Orange Line Mountain View - Alum Rock - A - inbound,15,Orange Line,orange-line,https://www.vta.org/go/routes/orange-line,frequent,e4002b
+97,Orange Line Mountain View - Alum Rock - A - outbound,15,Orange Line,orange-line,https://www.vta.org/go/routes/orange-line,frequent,e4002b
+98,21 Stanford Shopping Center - Santa Clara Transit Center - A - inbound,30,21,21,https://www.vta.org/go/routes/21,local,29588c
+99,21 Stanford Shopping Center - Santa Clara Transit Center - A - outbound,30,21,21,https://www.vta.org/go/routes/21,local,29588c
+100,51 Moffett Field / Ames Center - West Valley College - A - inbound,30,51,51,https://www.vta.org/go/routes/51,local,29588c
+101,51 Moffett Field / Ames Center - West Valley College - A - outbound,30,51,51,https://www.vta.org/go/routes/51,local,29588c
+102,53 Sunnyvale Transit Center - Santa Clara Transit Center - A - inbound,30,53,53,https://www.vta.org/go/routes/53,local,29588c
+103,53 Sunnyvale Transit Center - Santa Clara Transit Center - A - outbound,30,53,53,https://www.vta.org/go/routes/53,local,29588c
+104,Green Line Old Ironsides - Winchester - inbound,15,Green Line,green-line,https://www.vta.org/go/routes/green-line,frequent,e4002b
+105,Green Line Old Ironsides - Winchester - outbound,15,Green Line,green-line,https://www.vta.org/go/routes/green-line,frequent,e4002b
+106,Express 104 Milpitas BART - Stanford Research Park - inbound,Various,Express 104,express-104,https://www.vta.org/go/routes/express-104,express,00b140
+107,Express 104 Milpitas BART - Stanford Research Park - outbound,Various,Express 104,express-104,https://www.vta.org/go/routes/express-104,express,00b140
+108,Express 103 Eastridge - Stanford Research Park - inbound,Various,Express 103,express-103,https://www.vta.org/go/routes/express-103,express,00b140
+109,Express 103 Eastridge - Stanford Research Park - outbound,Various,Express 103,express-103,https://www.vta.org/go/routes/express-103,express,00b140
+110,Express 101 Camden & Highway 85 - Stanford Research Park - inbound,Various,Express 101,express-101,https://www.vta.org/go/routes/express-101,express,00b140
+111,Express 101 Camden & Highway 85 - Stanford Research Park - outbound,Various,Express 101,express-101,https://www.vta.org/go/routes/express-101,express,00b140
+112,64B McKee & White - Almaden Expressway & Camden - A - inbound,15,64B,64b,https://www.vta.org/go/routes/64b,frequent,e4002b
+113,64B McKee & White - Almaden Expressway & Camden - A - outbound,15,64B,64b,https://www.vta.org/go/routes/64b,frequent,29588c
+114,64A McKee & White - Ohlone-Chynoweth Station - A - inbound,15,64A,64a,https://www.vta.org/go/routes/64a,frequent,e4002b
+115,64A McKee & White - Ohlone-Chynoweth Station - A - outbound,15,64A,64a,https://www.vta.org/go/routes/64a,frequent,29588c
