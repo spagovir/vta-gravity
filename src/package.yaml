@@ -1,0 +1,15 @@
+name: vta-gravity
+
+library:
+  source-dirs: .
+  exposed-modules: 
+    - Census
+
+dependencies: 
+  - base
+  - cassava
+  - vector
+  - containers
+  - bytestring
+
+
